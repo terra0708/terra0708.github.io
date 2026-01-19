@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+    
+    <!-- Ana Sayfa - Türkçe -->
+    <url>
+        <loc>https://ozturkavukatlik.com/index.html</loc>
+        <lastmod>2026-01-15</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://ozturkavukatlik.com/index.html" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://ozturkavukatlik.com/en/index.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://ozturkavukatlik.com/index.html" />
+    </url>
+    
+    <!-- Ana Sayfa - İngilizce -->
+    <url>
+        <loc>https://ozturkavukatlik.com/en/index.html</loc>
+        <lastmod>2026-01-15</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://ozturkavukatlik.com/index.html" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://ozturkavukatlik.com/en/index.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://ozturkavukatlik.com/index.html" />
+    </url>
+    
+    <!-- Hakkımızda - Türkçe -->
+    <url>
+        <loc>https://ozturkavukatlik.com/hakkimizda.html</loc>
+        <lastmod>2026-01-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://ozturkavukatlik.com/hakkimizda.html" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://ozturkavukatlik.com/en/about.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://ozturkavukatlik.com/hakkimizda.html" />
+    </url>
+    
+    <!-- About Us - İngilizce -->
+    <url>
+        <loc>https://ozturkavukatlik.com/en/about.html</loc>
+        <lastmod>2026-01-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://ozturkavukatlik.com/hakkimizda.html" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://ozturkavukatlik.com/en/about.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://ozturkavukatlik.com/hakkimizda.html" />
+    </url>
+    
+    <!-- Hukuki Alanlar - Türkçe -->
+    <url>
+        <loc>https://ozturkavukatlik.com/calisma-alanlarimiz.html</loc>
+        <lastmod>2026-01-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://ozturkavukatlik.com/calisma-alanlarimiz.html" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://ozturkavukatlik.com/en/practice-areas.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://ozturkavukatlik.com/calisma-alanlarimiz.html" />
+    </url>
+    
+    <!-- Practice Areas - İngilizce -->
+    <url>
+        <loc>https://ozturkavukatlik.com/en/practice-areas.html</loc>
+        <lastmod>2026-01-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://ozturkavukatlik.com/calisma-alanlarimiz.html" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://ozturkavukatlik.com/en/practice-areas.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://ozturkavukatlik.com/calisma-alanlarimiz.html" />
+    </url>
+    
+    <!-- Hukuki Alan Detay - Türkçe -->
+    <url>
+        <loc>https://ozturkavukatlik.com/calisma-alani-detay.html</loc>
+        <lastmod>2026-01-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://ozturkavukatlik.com/calisma-alani-detay.html" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://ozturkavukatlik.com/en/practice-area-detail.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://ozturkavukatlik.com/calisma-alani-detay.html" />
+    </url>
+    
+    <!-- Practice Area Detail - İngilizce -->
+    <url>
+        <loc>https://ozturkavukatlik.com/en/practice-area-detail.html</loc>
+        <lastmod>2026-01-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://ozturkavukatlik.com/calisma-alani-detay.html" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://ozturkavukatlik.com/en/practice-area-detail.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://ozturkavukatlik.com/calisma-alani-detay.html" />
+    </url>
+    
+    <!-- SSS - Türkçe -->
+    <url>
+        <loc>https://ozturkavukatlik.com/sss.html</loc>
+        <lastmod>2026-01-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://ozturkavukatlik.com/sss.html" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://ozturkavukatlik.com/en/faq.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://ozturkavukatlik.com/sss.html" />
+    </url>
+    
+    <!-- FAQ - İngilizce -->
+    <url>
+        <loc>https://ozturkavukatlik.com/en/faq.html</loc>
+        <lastmod>2026-01-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://ozturkavukatlik.com/sss.html" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://ozturkavukatlik.com/en/faq.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://ozturkavukatlik.com/sss.html" />
+    </url>
+    
+    <!-- Makaleler - Türkçe -->
+    <url>
+        <loc>https://ozturkavukatlik.com/makaleler.html</loc>
+        <lastmod>2026-01-15</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://ozturkavukatlik.com/makaleler.html" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://ozturkavukatlik.com/en/articles.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://ozturkavukatlik.com/makaleler.html" />
+    </url>
+    
+    <!-- Articles - İngilizce -->
+    <url>
+        <loc>https://ozturkavukatlik.com/en/articles.html</loc>
+        <lastmod>2026-01-15</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://ozturkavukatlik.com/makaleler.html" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://ozturkavukatlik.com/en/articles.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://ozturkavukatlik.com/makaleler.html" />
+    </url>
+    
+    <!-- Makale Detay - Türkçe -->
+    <url>
+        <loc>https://ozturkavukatlik.com/makale-detay.html</loc>
+        <lastmod>2026-01-15</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://ozturkavukatlik.com/makale-detay.html" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://ozturkavukatlik.com/en/article-detail.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://ozturkavukatlik.com/makale-detay.html" />
+    </url>
+    
+    <!-- Article Detail - İngilizce -->
+    <url>
+        <loc>https://ozturkavukatlik.com/en/article-detail.html</loc>
+        <lastmod>2026-01-15</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://ozturkavukatlik.com/makale-detay.html" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://ozturkavukatlik.com/en/article-detail.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://ozturkavukatlik.com/makale-detay.html" />
+    </url>
+    
+    <!-- İletişim - Türkçe -->
+    <url>
+        <loc>https://ozturkavukatlik.com/iletisim.html</loc>
+        <lastmod>2026-01-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://ozturkavukatlik.com/iletisim.html" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://ozturkavukatlik.com/en/contact.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://ozturkavukatlik.com/iletisim.html" />
+    </url>
+    
+    <!-- Contact - İngilizce -->
+    <url>
+        <loc>https://ozturkavukatlik.com/en/contact.html</loc>
+        <lastmod>2026-01-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://ozturkavukatlik.com/iletisim.html" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://ozturkavukatlik.com/en/contact.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://ozturkavukatlik.com/iletisim.html" />
+    </url>
+    
+</urlset>
