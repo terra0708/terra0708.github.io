@@ -1,181 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xhtml="http://www.w3.org/1999/xhtml">
-    
-    <!-- Ana Sayfa - Türkçe -->
-    <url>
-        <loc>https://ozturkavukatlik.com/index.html</loc>
-        <lastmod>2026-01-15</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>1.0</priority>
-        <xhtml:link rel="alternate" hreflang="tr" href="https://ozturkavukatlik.com/index.html" />
-        <xhtml:link rel="alternate" hreflang="en" href="https://ozturkavukatlik.com/en/index.html" />
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://ozturkavukatlik.com/index.html" />
-    </url>
-    
-    <!-- Ana Sayfa - İngilizce -->
-    <url>
-        <loc>https://ozturkavukatlik.com/en/index.html</loc>
-        <lastmod>2026-01-15</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>1.0</priority>
-        <xhtml:link rel="alternate" hreflang="tr" href="https://ozturkavukatlik.com/index.html" />
-        <xhtml:link rel="alternate" hreflang="en" href="https://ozturkavukatlik.com/en/index.html" />
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://ozturkavukatlik.com/index.html" />
-    </url>
-    
-    <!-- Hakkımızda - Türkçe -->
-    <url>
-        <loc>https://ozturkavukatlik.com/hakkimizda.html</loc>
-        <lastmod>2026-01-15</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.9</priority>
-        <xhtml:link rel="alternate" hreflang="tr" href="https://ozturkavukatlik.com/hakkimizda.html" />
-        <xhtml:link rel="alternate" hreflang="en" href="https://ozturkavukatlik.com/en/about.html" />
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://ozturkavukatlik.com/hakkimizda.html" />
-    </url>
-    
-    <!-- About Us - İngilizce -->
-    <url>
-        <loc>https://ozturkavukatlik.com/en/about.html</loc>
-        <lastmod>2026-01-15</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.9</priority>
-        <xhtml:link rel="alternate" hreflang="tr" href="https://ozturkavukatlik.com/hakkimizda.html" />
-        <xhtml:link rel="alternate" hreflang="en" href="https://ozturkavukatlik.com/en/about.html" />
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://ozturkavukatlik.com/hakkimizda.html" />
-    </url>
-    
-    <!-- Hukuki Alanlar - Türkçe -->
-    <url>
-        <loc>https://ozturkavukatlik.com/calisma-alanlarimiz.html</loc>
-        <lastmod>2026-01-15</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.9</priority>
-        <xhtml:link rel="alternate" hreflang="tr" href="https://ozturkavukatlik.com/calisma-alanlarimiz.html" />
-        <xhtml:link rel="alternate" hreflang="en" href="https://ozturkavukatlik.com/en/practice-areas.html" />
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://ozturkavukatlik.com/calisma-alanlarimiz.html" />
-    </url>
-    
-    <!-- Practice Areas - İngilizce -->
-    <url>
-        <loc>https://ozturkavukatlik.com/en/practice-areas.html</loc>
-        <lastmod>2026-01-15</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.9</priority>
-        <xhtml:link rel="alternate" hreflang="tr" href="https://ozturkavukatlik.com/calisma-alanlarimiz.html" />
-        <xhtml:link rel="alternate" hreflang="en" href="https://ozturkavukatlik.com/en/practice-areas.html" />
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://ozturkavukatlik.com/calisma-alanlarimiz.html" />
-    </url>
-    
-    <!-- Hukuki Alan Detay - Türkçe -->
-    <url>
-        <loc>https://ozturkavukatlik.com/calisma-alani-detay.html</loc>
-        <lastmod>2026-01-15</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-        <xhtml:link rel="alternate" hreflang="tr" href="https://ozturkavukatlik.com/calisma-alani-detay.html" />
-        <xhtml:link rel="alternate" hreflang="en" href="https://ozturkavukatlik.com/en/practice-area-detail.html" />
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://ozturkavukatlik.com/calisma-alani-detay.html" />
-    </url>
-    
-    <!-- Practice Area Detail - İngilizce -->
-    <url>
-        <loc>https://ozturkavukatlik.com/en/practice-area-detail.html</loc>
-        <lastmod>2026-01-15</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-        <xhtml:link rel="alternate" hreflang="tr" href="https://ozturkavukatlik.com/calisma-alani-detay.html" />
-        <xhtml:link rel="alternate" hreflang="en" href="https://ozturkavukatlik.com/en/practice-area-detail.html" />
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://ozturkavukatlik.com/calisma-alani-detay.html" />
-    </url>
-    
-    <!-- SSS - Türkçe -->
-    <url>
-        <loc>https://ozturkavukatlik.com/sss.html</loc>
-        <lastmod>2026-01-15</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-        <xhtml:link rel="alternate" hreflang="tr" href="https://ozturkavukatlik.com/sss.html" />
-        <xhtml:link rel="alternate" hreflang="en" href="https://ozturkavukatlik.com/en/faq.html" />
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://ozturkavukatlik.com/sss.html" />
-    </url>
-    
-    <!-- FAQ - İngilizce -->
-    <url>
-        <loc>https://ozturkavukatlik.com/en/faq.html</loc>
-        <lastmod>2026-01-15</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-        <xhtml:link rel="alternate" hreflang="tr" href="https://ozturkavukatlik.com/sss.html" />
-        <xhtml:link rel="alternate" hreflang="en" href="https://ozturkavukatlik.com/en/faq.html" />
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://ozturkavukatlik.com/sss.html" />
-    </url>
-    
-    <!-- Makaleler - Türkçe -->
-    <url>
-        <loc>https://ozturkavukatlik.com/makaleler.html</loc>
-        <lastmod>2026-01-15</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.9</priority>
-        <xhtml:link rel="alternate" hreflang="tr" href="https://ozturkavukatlik.com/makaleler.html" />
-        <xhtml:link rel="alternate" hreflang="en" href="https://ozturkavukatlik.com/en/articles.html" />
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://ozturkavukatlik.com/makaleler.html" />
-    </url>
-    
-    <!-- Articles - İngilizce -->
-    <url>
-        <loc>https://ozturkavukatlik.com/en/articles.html</loc>
-        <lastmod>2026-01-15</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.9</priority>
-        <xhtml:link rel="alternate" hreflang="tr" href="https://ozturkavukatlik.com/makaleler.html" />
-        <xhtml:link rel="alternate" hreflang="en" href="https://ozturkavukatlik.com/en/articles.html" />
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://ozturkavukatlik.com/makaleler.html" />
-    </url>
-    
-    <!-- Makale Detay - Türkçe -->
-    <url>
-        <loc>https://ozturkavukatlik.com/makale-detay.html</loc>
-        <lastmod>2026-01-15</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.7</priority>
-        <xhtml:link rel="alternate" hreflang="tr" href="https://ozturkavukatlik.com/makale-detay.html" />
-        <xhtml:link rel="alternate" hreflang="en" href="https://ozturkavukatlik.com/en/article-detail.html" />
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://ozturkavukatlik.com/makale-detay.html" />
-    </url>
-    
-    <!-- Article Detail - İngilizce -->
-    <url>
-        <loc>https://ozturkavukatlik.com/en/article-detail.html</loc>
-        <lastmod>2026-01-15</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.7</priority>
-        <xhtml:link rel="alternate" hreflang="tr" href="https://ozturkavukatlik.com/makale-detay.html" />
-        <xhtml:link rel="alternate" hreflang="en" href="https://ozturkavukatlik.com/en/article-detail.html" />
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://ozturkavukatlik.com/makale-detay.html" />
-    </url>
-    
-    <!-- İletişim - Türkçe -->
-    <url>
-        <loc>https://ozturkavukatlik.com/iletisim.html</loc>
-        <lastmod>2026-01-15</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-        <xhtml:link rel="alternate" hreflang="tr" href="https://ozturkavukatlik.com/iletisim.html" />
-        <xhtml:link rel="alternate" hreflang="en" href="https://ozturkavukatlik.com/en/contact.html" />
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://ozturkavukatlik.com/iletisim.html" />
-    </url>
-    
-    <!-- Contact - İngilizce -->
-    <url>
-        <loc>https://ozturkavukatlik.com/en/contact.html</loc>
-        <lastmod>2026-01-15</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-        <xhtml:link rel="alternate" hreflang="tr" href="https://ozturkavukatlik.com/iletisim.html" />
-        <xhtml:link rel="alternate" hreflang="en" href="https://ozturkavukatlik.com/en/contact.html" />
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://ozturkavukatlik.com/iletisim.html" />
-    </url>
-    
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url><loc>https://www.ozturkavukatlikburosu.av.tr/tr/</loc><xhtml:link rel="alternate" hreflang="tr" href="https://www.ozturkavukatlikburosu.av.tr/tr/" /><xhtml:link rel="alternate" hreflang="en" href="https://www.ozturkavukatlikburosu.av.tr/en/" /><xhtml:link rel="alternate" hreflang="x-default" href="https://www.ozturkavukatlikburosu.av.tr/tr/" /></url>
+  <url><loc>https://www.ozturkavukatlikburosu.av.tr/en/</loc><xhtml:link rel="alternate" hreflang="tr" href="https://www.ozturkavukatlikburosu.av.tr/tr/" /><xhtml:link rel="alternate" hreflang="en" href="https://www.ozturkavukatlikburosu.av.tr/en/" /><xhtml:link rel="alternate" hreflang="x-default" href="https://www.ozturkavukatlikburosu.av.tr/tr/" /></url>
+  <url><loc>https://www.ozturkavukatlikburosu.av.tr/tr/hakkimizda/</loc><xhtml:link rel="alternate" hreflang="tr" href="https://www.ozturkavukatlikburosu.av.tr/tr/hakkimizda/" /><xhtml:link rel="alternate" hreflang="en" href="https://www.ozturkavukatlikburosu.av.tr/en/about/" /></url>
+  <url><loc>https://www.ozturkavukatlikburosu.av.tr/en/about/</loc><xhtml:link rel="alternate" hreflang="tr" href="https://www.ozturkavukatlikburosu.av.tr/tr/hakkimizda/" /><xhtml:link rel="alternate" hreflang="en" href="https://www.ozturkavukatlikburosu.av.tr/en/about/" /></url>
+  <url><loc>https://www.ozturkavukatlikburosu.av.tr/tr/hukuki-alanlar/</loc><xhtml:link rel="alternate" hreflang="tr" href="https://www.ozturkavukatlikburosu.av.tr/tr/hukuki-alanlar/" /><xhtml:link rel="alternate" hreflang="en" href="https://www.ozturkavukatlikburosu.av.tr/en/legal-areas/" /></url>
+  <url><loc>https://www.ozturkavukatlikburosu.av.tr/en/legal-areas/</loc><xhtml:link rel="alternate" hreflang="tr" href="https://www.ozturkavukatlikburosu.av.tr/tr/hukuki-alanlar/" /><xhtml:link rel="alternate" hreflang="en" href="https://www.ozturkavukatlikburosu.av.tr/en/legal-areas/" /></url>
+  <url><loc>https://www.ozturkavukatlikburosu.av.tr/tr/sss/</loc><xhtml:link rel="alternate" hreflang="tr" href="https://www.ozturkavukatlikburosu.av.tr/tr/sss/" /><xhtml:link rel="alternate" hreflang="en" href="https://www.ozturkavukatlikburosu.av.tr/en/faq/" /></url>
+  <url><loc>https://www.ozturkavukatlikburosu.av.tr/en/faq/</loc><xhtml:link rel="alternate" hreflang="tr" href="https://www.ozturkavukatlikburosu.av.tr/tr/sss/" /><xhtml:link rel="alternate" hreflang="en" href="https://www.ozturkavukatlikburosu.av.tr/en/faq/" /></url>
+  <url><loc>https://www.ozturkavukatlikburosu.av.tr/tr/makaleler/</loc><xhtml:link rel="alternate" hreflang="tr" href="https://www.ozturkavukatlikburosu.av.tr/tr/makaleler/" /><xhtml:link rel="alternate" hreflang="en" href="https://www.ozturkavukatlikburosu.av.tr/en/articles/" /></url>
+  <url><loc>https://www.ozturkavukatlikburosu.av.tr/en/articles/</loc><xhtml:link rel="alternate" hreflang="tr" href="https://www.ozturkavukatlikburosu.av.tr/tr/makaleler/" /><xhtml:link rel="alternate" hreflang="en" href="https://www.ozturkavukatlikburosu.av.tr/en/articles/" /></url>
+  <url><loc>https://www.ozturkavukatlikburosu.av.tr/tr/iletisim/</loc><xhtml:link rel="alternate" hreflang="tr" href="https://www.ozturkavukatlikburosu.av.tr/tr/iletisim/" /><xhtml:link rel="alternate" hreflang="en" href="https://www.ozturkavukatlikburosu.av.tr/en/contact/" /></url>
+  <url><loc>https://www.ozturkavukatlikburosu.av.tr/en/contact/</loc><xhtml:link rel="alternate" hreflang="tr" href="https://www.ozturkavukatlikburosu.av.tr/tr/iletisim/" /><xhtml:link rel="alternate" hreflang="en" href="https://www.ozturkavukatlikburosu.av.tr/en/contact/" /></url>
+  <url><loc>https://www.ozturkavukatlikburosu.av.tr/tr/makaleler/is-hukuku/is-hukukunda-yeni-duzenlemeler/</loc><xhtml:link rel="alternate" hreflang="tr" href="https://www.ozturkavukatlikburosu.av.tr/tr/makaleler/is-hukuku/is-hukukunda-yeni-duzenlemeler/" /><xhtml:link rel="alternate" hreflang="en" href="https://www.ozturkavukatlikburosu.av.tr/en/articles/labor-law/new-regulations-in-labor-law/" /></url>
+  <url><loc>https://www.ozturkavukatlikburosu.av.tr/en/articles/labor-law/new-regulations-in-labor-law/</loc><xhtml:link rel="alternate" hreflang="tr" href="https://www.ozturkavukatlikburosu.av.tr/tr/makaleler/is-hukuku/is-hukukunda-yeni-duzenlemeler/" /><xhtml:link rel="alternate" hreflang="en" href="https://www.ozturkavukatlikburosu.av.tr/en/articles/labor-law/new-regulations-in-labor-law/" /></url>
+  <url><loc>https://www.ozturkavukatlikburosu.av.tr/tr/makaleler/aile-hukuku/aile-hukukunda-velayet-davalari/</loc><xhtml:link rel="alternate" hreflang="tr" href="https://www.ozturkavukatlikburosu.av.tr/tr/makaleler/aile-hukuku/aile-hukukunda-velayet-davalari/" /><xhtml:link rel="alternate" hreflang="en" href="https://www.ozturkavukatlikburosu.av.tr/en/articles/family-law/custody-cases-in-family-law/" /></url>
+  <url><loc>https://www.ozturkavukatlikburosu.av.tr/en/articles/family-law/custody-cases-in-family-law/</loc><xhtml:link rel="alternate" hreflang="tr" href="https://www.ozturkavukatlikburosu.av.tr/tr/makaleler/aile-hukuku/aile-hukukunda-velayet-davalari/" /><xhtml:link rel="alternate" hreflang="en" href="https://www.ozturkavukatlikburosu.av.tr/en/articles/family-law/custody-cases-in-family-law/" /></url>
+  <url><loc>https://www.ozturkavukatlikburosu.av.tr/tr/makaleler/gayrimenkul-hukuku/gayrimenkul-alim-satim-surecleri/</loc><xhtml:link rel="alternate" hreflang="tr" href="https://www.ozturkavukatlikburosu.av.tr/tr/makaleler/gayrimenkul-hukuku/gayrimenkul-alim-satim-surecleri/" /><xhtml:link rel="alternate" hreflang="en" href="https://www.ozturkavukatlikburosu.av.tr/en/articles/real-estate-law/real-estate-purchase-sale-processes/" /></url>
+  <url><loc>https://www.ozturkavukatlikburosu.av.tr/en/articles/real-estate-law/real-estate-purchase-sale-processes/</loc><xhtml:link rel="alternate" hreflang="tr" href="https://www.ozturkavukatlikburosu.av.tr/tr/makaleler/gayrimenkul-hukuku/gayrimenkul-alim-satim-surecleri/" /><xhtml:link rel="alternate" hreflang="en" href="https://www.ozturkavukatlikburosu.av.tr/en/articles/real-estate-law/real-estate-purchase-sale-processes/" /></url>
+  <url><loc>https://www.ozturkavukatlikburosu.av.tr/tr/makaleler/calisma-hukuku/calisma-hukukunda-sendika-haklari/</loc><xhtml:link rel="alternate" hreflang="tr" href="https://www.ozturkavukatlikburosu.av.tr/tr/makaleler/calisma-hukuku/calisma-hukukunda-sendika-haklari/" /><xhtml:link rel="alternate" hreflang="en" href="https://www.ozturkavukatlikburosu.av.tr/en/articles/employment-law/union-rights-in-employment-law/" /></url>
+  <url><loc>https://www.ozturkavukatlikburosu.av.tr/en/articles/employment-law/union-rights-in-employment-law/</loc><xhtml:link rel="alternate" hreflang="tr" href="https://www.ozturkavukatlikburosu.av.tr/tr/makaleler/calisma-hukuku/calisma-hukukunda-sendika-haklari/" /><xhtml:link rel="alternate" hreflang="en" href="https://www.ozturkavukatlikburosu.av.tr/en/articles/employment-law/union-rights-in-employment-law/" /></url>
+  <url><loc>https://www.ozturkavukatlikburosu.av.tr/tr/makaleler/miras-hukuku/miras-hukuku-ve-vasiyetname/</loc><xhtml:link rel="alternate" hreflang="tr" href="https://www.ozturkavukatlikburosu.av.tr/tr/makaleler/miras-hukuku/miras-hukuku-ve-vasiyetname/" /><xhtml:link rel="alternate" hreflang="en" href="https://www.ozturkavukatlikburosu.av.tr/en/articles/inheritance-law/inheritance-law-and-wills/" /></url>
+  <url><loc>https://www.ozturkavukatlikburosu.av.tr/en/articles/inheritance-law/inheritance-law-and-wills/</loc><xhtml:link rel="alternate" hreflang="tr" href="https://www.ozturkavukatlikburosu.av.tr/tr/makaleler/miras-hukuku/miras-hukuku-ve-vasiyetname/" /><xhtml:link rel="alternate" hreflang="en" href="https://www.ozturkavukatlikburosu.av.tr/en/articles/inheritance-law/inheritance-law-and-wills/" /></url>
+  <url><loc>https://www.ozturkavukatlikburosu.av.tr/tr/makaleler/miras-hukuku/tereke-tespiti-davasi/</loc><xhtml:link rel="alternate" hreflang="tr" href="https://www.ozturkavukatlikburosu.av.tr/tr/makaleler/miras-hukuku/tereke-tespiti-davasi/" /><xhtml:link rel="alternate" hreflang="en" href="https://www.ozturkavukatlikburosu.av.tr/en/articles/inheritance-law/estate-detection-case/" /></url>
+  <url><loc>https://www.ozturkavukatlikburosu.av.tr/en/articles/inheritance-law/estate-detection-case/</loc><xhtml:link rel="alternate" hreflang="tr" href="https://www.ozturkavukatlikburosu.av.tr/tr/makaleler/miras-hukuku/tereke-tespiti-davasi/" /><xhtml:link rel="alternate" hreflang="en" href="https://www.ozturkavukatlikburosu.av.tr/en/articles/inheritance-law/estate-detection-case/" /></url>
+  <url><loc>https://www.ozturkavukatlikburosu.av.tr/tr/makaleler/aile-hukuku/bosanma-surecleri-ve-haklar/</loc><xhtml:link rel="alternate" hreflang="tr" href="https://www.ozturkavukatlikburosu.av.tr/tr/makaleler/aile-hukuku/bosanma-surecleri-ve-haklar/" /><xhtml:link rel="alternate" hreflang="en" href="https://www.ozturkavukatlikburosu.av.tr/en/articles/family-law/divorce-processes-and-rights/" /></url>
+  <url><loc>https://www.ozturkavukatlikburosu.av.tr/en/articles/family-law/divorce-processes-and-rights/</loc><xhtml:link rel="alternate" hreflang="tr" href="https://www.ozturkavukatlikburosu.av.tr/tr/makaleler/aile-hukuku/bosanma-surecleri-ve-haklar/" /><xhtml:link rel="alternate" hreflang="en" href="https://www.ozturkavukatlikburosu.av.tr/en/articles/family-law/divorce-processes-and-rights/" /></url>
 </urlset>

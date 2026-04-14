@@ -174,46 +174,60 @@ const LanguageManager = {
     },
 
     getAlternateURL: function (targetLang) {
-        const currentPath = window.location.pathname;
+        const currentPath = window.location.pathname.replace(/\/+$/, '/') || '/';
         const currentLang = this.detectLanguage();
 
-        // If already in target language, return current path
         if (currentLang === targetLang) {
             return currentPath;
         }
 
-        // URL mappings
-        const mappings = {
-            tr: {
-                '/index.html': '/en/index.html',
-                '/': '/en/',
-                '/hakkimizda.html': '/en/about.html',
-                '/calisma-alanlarimiz.html': '/en/practice-areas.html',
-                '/calisma-alani-detay.html': '/en/practice-area-detail.html',
-                '/iletisim.html': '/en/contact.html',
-                '/sss.html': '/en/faq.html',
-                '/makaleler.html': '/en/articles.html',
-                '/makale-detay.html': '/en/article-detail.html'
-            },
-            en: {
-                '/en/index.html': '/index.html',
-                '/en/': '/',
-                '/en/about.html': '/hakkimizda.html',
-                '/en/practice-areas.html': '/calisma-alanlarimiz.html',
-                '/en/practice-area-detail.html': '/calisma-alani-detay.html',
-                '/en/contact.html': '/iletisim.html',
-                '/en/faq.html': '/sss.html',
-                '/en/articles.html': '/makaleler.html',
-                '/en/article-detail.html': '/makale-detay.html'
-            }
+        const staticMap = {
+            '/': '/en/',
+            '/tr/': '/en/',
+            '/tr/hakkimizda/': '/en/about/',
+            '/tr/hukuki-alanlar/': '/en/legal-areas/',
+            '/tr/sss/': '/en/faq/',
+            '/tr/makaleler/': '/en/articles/',
+            '/tr/iletisim/': '/en/contact/',
+            '/index.html': '/en/',
+            '/hakkimizda.html': '/en/about/',
+            '/sss.html': '/en/faq/',
+            '/makaleler.html': '/en/articles/',
+            '/iletisim.html': '/en/contact/',
+            '/en/': '/tr/',
+            '/en/about/': '/tr/hakkimizda/',
+            '/en/legal-areas/': '/tr/hukuki-alanlar/',
+            '/en/faq/': '/tr/sss/',
+            '/en/articles/': '/tr/makaleler/',
+            '/en/contact/': '/tr/iletisim/',
+            '/en/index.html': '/tr/',
+            '/en/about.html': '/tr/hakkimizda/',
+            '/en/faq.html': '/tr/sss/',
+            '/en/articles.html': '/tr/makaleler/',
+            '/en/contact.html': '/tr/iletisim/'
         };
 
-        // Get mapping
-        const mapping = mappings[currentLang];
-        const [path, query] = currentPath.split('?');
-        const alternateURL = mapping[path] || path;
+        const articlePairs = {
+            '/tr/makaleler/is-hukuku/is-hukukunda-yeni-duzenlemeler/': '/en/articles/labor-law/new-regulations-in-labor-law/',
+            '/tr/makaleler/aile-hukuku/aile-hukukunda-velayet-davalari/': '/en/articles/family-law/custody-cases-in-family-law/',
+            '/tr/makaleler/gayrimenkul-hukuku/gayrimenkul-alim-satim-surecleri/': '/en/articles/real-estate-law/real-estate-purchase-sale-processes/',
+            '/tr/makaleler/calisma-hukuku/calisma-hukukunda-sendika-haklari/': '/en/articles/employment-law/union-rights-in-employment-law/',
+            '/tr/makaleler/miras-hukuku/miras-hukuku-ve-vasiyetname/': '/en/articles/inheritance-law/inheritance-law-and-wills/',
+            '/tr/makaleler/aile-hukuku/bosanma-surecleri-ve-haklar/': '/en/articles/family-law/divorce-processes-and-rights/',
+            '/tr/makaleler/miras-hukuku/tereke-tespiti-davasi/': '/en/articles/inheritance-law/estate-detection-case/'
+        };
 
-        return query ? `${alternateURL}?${query}` : alternateURL;
+        Object.keys(articlePairs).forEach((trPath) => {
+            const enPath = articlePairs[trPath];
+            staticMap[enPath] = trPath;
+        });
+
+        const mapped = staticMap[currentPath] || (
+            currentPath.startsWith('/en/')
+                ? currentPath.replace(/^\/en\//, '/tr/')
+                : currentPath.replace(/^\/(tr\/)?/, '/en/')
+        );
+        return mapped;
     },
 
     switchLanguage: function (targetLang) {

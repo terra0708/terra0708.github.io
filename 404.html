@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 | Sayfa Bulunamadı</title>
+    <meta name="robots" content="noindex, follow">
+    <link rel="stylesheet" href="/css/global.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <style>
+        .error-wrapper {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 120px 0 60px;
+            background: linear-gradient(
+                to bottom,
+                var(--bg-secondary) 0%,
+                var(--bg-primary) 12%,
+                var(--bg-primary) 88%,
+                var(--bg-secondary) 100%
+            );
+        }
+
+        .error-card {
+            width: min(900px, 92%);
+            margin: 0 auto;
+            padding: clamp(1.5rem, 3vw, 2.5rem);
+            border: 1px solid var(--glass-border);
+            border-radius: 16px;
+            background: var(--glass-bg);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            text-align: center;
+        }
+
+        .error-code {
+            font-size: clamp(3rem, 10vw, 6rem);
+            line-height: 1;
+            color: var(--color-gold);
+            margin-bottom: 0.5rem;
+            letter-spacing: 1px;
+        }
+
+        .error-title {
+            margin-bottom: 0.8rem;
+            font-size: clamp(1.3rem, 3vw, 2rem);
+        }
+
+        .error-subtitle {
+            color: var(--text-secondary);
+            max-width: 760px;
+            margin: 0 auto;
+            line-height: 1.75;
+        }
+
+        .error-actions {
+            margin-top: 1.6rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 0.75rem;
+        }
+    </style>
+</head>
+<body>
+    <main class="error-wrapper">
+        <section class="error-card">
+            <p class="error-code">404</p>
+            <h1 class="error-title">Aradığınız sayfayı bulamadık</h1>
+            <p class="error-subtitle">
+                İstediğiniz sayfa taşınmış, güncellenmiş veya kaldırılmış olabilir.
+                The page you requested may have been moved, updated, or removed.
+            </p>
+            <div class="error-actions">
+                <a class="btn btn-primary" href="/tr/">Türkçe Ana Sayfa</a>
+                <a class="btn btn-primary" href="/en/">English Home</a>
+                <a class="btn btn-outline-gold" href="/tr/makaleler/">TR Makaleler</a>
+                <a class="btn btn-outline-gold" href="/en/articles/">EN Articles</a>
+                <a class="btn btn-secondary" href="/sitemap.xml">Sitemap.xml</a>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

@@ -6,7 +6,7 @@ window.initializeAnimations = (container = document) => {
     ScrollTrigger.getAll().forEach(t => t.kill());
 
     // 1. Initial State Setting (Prevent Flashes)
-    const headerTitle = container.querySelector('.hero-title, .page-title, .article-detail-title, .practice-area-detail-title');
+    const headerTitle = container.querySelector('.hero-title, .page-title, .article-detail-title, .legal-area-detail-title');
     const headerSubtitle = container.querySelector('.hero-subtitle, .page-subtitle, .article-detail-date');
     const headerButtons = container.querySelector('.hero-buttons');
     const scrollIndicator = container.querySelector('.scroll-indicator');
@@ -38,7 +38,7 @@ window.initializeAnimations = (container = document) => {
         if (scrollIndicator) headerTl.to(scrollIndicator, { opacity: 1, duration: 1 }, '+=0.5');
 
     } else {
-        const subPageHeader = container.querySelector('.page-header, .article-detail-header, .practice-area-detail-header');
+        const subPageHeader = container.querySelector('.page-header, .article-detail-header, .legal-area-detail-header');
         if (subPageHeader) {
             if (headerTitle) headerTl.to(headerTitle, { y: 0, opacity: 1, duration: 0.8, ease: 'power3.out' }, 0);
             if (headerSubtitle) {
@@ -62,11 +62,11 @@ window.initializeAnimations = (container = document) => {
         });
     });
 
-    const practiceCards = container.querySelectorAll('.practice-area-card');
-    if (practiceCards.length > 0) {
-        gsap.from(practiceCards, {
+    const legalCards = container.querySelectorAll('.legal-area-card');
+    if (legalCards.length > 0) {
+        gsap.from(legalCards, {
             scrollTrigger: {
-                trigger: container.querySelector('.section-practice-areas') || container.querySelector('.section-practice-areas-page'),
+                trigger: container.querySelector('.section-legal-areas') || container.querySelector('.section-legal-areas-page'),
                 start: 'top 80%',
             },
             y: 60, opacity: 0, duration: 0.8, stagger: 0.15, ease: 'power3.out', clearProps: 'all'
@@ -237,7 +237,7 @@ window.initializeAnimations = (container = document) => {
 };
 
 // Sub-page header detection helper
-const getSubPageHeader = (container) => container.querySelector('.page-header, .article-detail-header, .practice-area-detail-header');
+const getSubPageHeader = (container) => container.querySelector('.page-header, .article-detail-header, .legal-area-detail-header');
 
 // Initial Load
 document.addEventListener('DOMContentLoaded', () => {
@@ -327,7 +327,6 @@ document.addEventListener('DOMContentLoaded', () => {
                             const namespace = data.next.namespace;
                             if (namespace === 'faq' && window.initFAQ) window.initFAQ();
                             if (namespace === 'article-detail' && window.initArticleDetail) window.initArticleDetail();
-                            if (namespace === 'practice-area-detail' && window.initPracticeAreaDetail) window.initPracticeAreaDetail();
 
                             // Active Link Update
                             const path = window.location.pathname;
