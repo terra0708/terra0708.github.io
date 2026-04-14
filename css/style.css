@@ -93,12 +93,13 @@
 }
 
 .hero-quote-author {
-    margin-top: calc(var(--spacing-md) * -0.55);
-    margin-bottom: var(--spacing-md);
+    margin-top: calc(var(--spacing-md) * -0.25);
+    margin-bottom: var(--spacing-sm);
     color: var(--color-gold-light);
     font-family: var(--font-primary);
     font-size: clamp(1rem, 2vw, 1.25rem);
     font-style: italic;
+    font-weight: 600;
     letter-spacing: 0.04em;
     opacity: 0.92;
 }
@@ -1881,7 +1882,7 @@
     }
 
     .hero-quote-author {
-        margin-top: calc(var(--spacing-sm) * -0.5);
+        margin-top: calc(var(--spacing-sm) * -0.2);
         margin-bottom: var(--spacing-sm);
         font-size: clamp(0.95rem, 2.4vw, 1.1rem);
     }
@@ -1995,22 +1996,22 @@
 /* ========== MOBILE (320px - 480px) ========== */
 @media (max-width: 480px) {
     .hero {
-        min-height: 70vh;
+        min-height: 100svh;
         padding-top: var(--header-height);
         z-index: 0;
     }
 
     .hero-content {
-        max-width: 100%;
+        max-width: 430px;
         width: 100%;
-        padding: var(--spacing-sm);
+        padding: var(--spacing-sm) var(--spacing-sm) var(--spacing-md);
         box-sizing: border-box;
     }
 
     .hero-title {
-        font-size: clamp(1.75rem, 8vw, 2.25rem);
+        font-size: clamp(1.55rem, 7.2vw, 2rem);
         margin-bottom: var(--spacing-xs);
-        line-height: 1.2;
+        line-height: 1.16;
         width: 100%;
         max-width: 100%;
         padding: 0 var(--spacing-xs);
@@ -2021,17 +2022,17 @@
     }
 
     .hero-quote-author {
-        margin-top: calc(var(--spacing-xs) * -0.4);
-        margin-bottom: var(--spacing-sm);
-        font-size: 0.95rem;
+        margin-top: 0.1rem;
+        margin-bottom: 0.65rem;
+        font-size: 0.9rem;
         letter-spacing: 0.02em;
         padding: 0 var(--spacing-xs);
     }
 
     .hero-subtitle {
-        font-size: clamp(0.9rem, 4vw, 1.1rem);
-        margin-bottom: var(--spacing-md);
-        line-height: 1.7;
+        font-size: clamp(0.88rem, 3.5vw, 1rem);
+        margin-bottom: var(--spacing-sm);
+        line-height: 1.55;
         padding: 0 var(--spacing-xs);
     }
 
@@ -2046,8 +2047,8 @@
     .hero-buttons .btn {
         width: 100%;
         padding: var(--spacing-sm) var(--spacing-md);
-        font-size: 0.9rem;
-        min-height: 48px;
+        font-size: 0.88rem;
+        min-height: 50px;
     }
 
     .hero-overlay {
@@ -2055,11 +2056,7 @@
     }
 
     .scroll-indicator {
-        bottom: 15px;
-    }
-
-    .scroll-indicator p {
-        font-size: 0.65rem;
+        display: none;
     }
 
     .page-header {
