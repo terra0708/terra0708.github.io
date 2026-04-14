@@ -604,34 +604,59 @@
 
 .hero.hero-home,
 .page-header.hero-home {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../public/img/hero/hero-home.png') !important;
+    background-image: linear-gradient(var(--hero-overlay), var(--hero-overlay)), url('../public/img/hero/hero-home.png') !important;
 }
 
 .hero.hero-about,
 .page-header.hero-about {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('../public/img/hero/hero-about.png') !important;
+    background-image: linear-gradient(var(--hero-overlay), var(--hero-overlay)), url('../public/img/hero/hero-about.png') !important;
 }
 
 .hero.hero-practice-areas,
 .page-header.hero-practice-areas,
 .practice-area-detail-header.hero-practice-areas {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('../public/img/hero/hero-practice-areas.png') !important;
+    background-image: linear-gradient(var(--hero-overlay), var(--hero-overlay)), url('../public/img/hero/hero-practice-areas.png') !important;
 }
 
 .hero.hero-articles,
 .page-header.hero-articles,
 .article-detail-header-image.hero-articles {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('../public/img/hero/hero-articles.png') !important;
+    background-image: linear-gradient(var(--hero-overlay), var(--hero-overlay)), url('../public/img/hero/hero-articles.png') !important;
 }
 
 .hero.hero-faq,
 .page-header.hero-faq {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('../public/img/hero/hero-faq.png') !important;
+    background-image: linear-gradient(var(--hero-overlay), var(--hero-overlay)), url('../public/img/hero/hero-faq.png') !important;
 }
 
 .hero.hero-contact,
 .page-header.hero-contact {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('../public/img/hero/hero-contact.png') !important;
+    background-image: linear-gradient(var(--hero-overlay), var(--hero-overlay)), url('../public/img/hero/hero-contact.png') !important;
+}
+
+/* Brighten images in light mode */
+[data-theme="light"] .hero,
+[data-theme="light"] .page-header,
+[data-theme="light"] .practice-area-detail-header,
+[data-theme="light"] .article-detail-header-image {
+    background-color: rgba(255, 255, 255, 0.15); /* Subtly brighten without washing out */
+}
+
+/* Light mode hero content visibility */
+[data-theme="light"] .hero-title {
+    background: none;
+    -webkit-background-clip: initial;
+    -webkit-text-fill-color: initial;
+    background-clip: initial;
+    color: #1a1a1c !important;
+    text-shadow: 0 1px 3px rgba(255, 255, 255, 0.2);
+    font-weight: 800;
+}
+
+[data-theme="light"] .hero-subtitle {
+    color: #2a2a2e;
+    font-weight: 600;
+    text-shadow: none;
 }
 
 /* Light mode page header transitions */
