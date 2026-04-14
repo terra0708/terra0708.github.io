@@ -26,13 +26,8 @@ const ThemeManager = {
     updateMapTheme: function (theme) {
         const mapIframe = document.querySelector('.map-container iframe');
         if (mapIframe) {
-            if (theme === 'light') {
-                // Light mode: remove dark filter
-                mapIframe.style.filter = 'none';
-            } else {
-                // Dark mode: keep default (already dark)
-                mapIframe.style.filter = 'none';
-            }
+            // Keep map rendering consistent across themes by relying on CSS only.
+            mapIframe.style.removeProperty('filter');
         }
     },
 

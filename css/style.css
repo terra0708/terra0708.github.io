@@ -92,6 +92,17 @@
     line-height: 1.8;
 }
 
+.hero-quote-author {
+    margin-top: calc(var(--spacing-md) * -0.55);
+    margin-bottom: var(--spacing-md);
+    color: var(--color-gold-light);
+    font-family: var(--font-primary);
+    font-size: clamp(1rem, 2vw, 1.25rem);
+    font-style: italic;
+    letter-spacing: 0.04em;
+    opacity: 0.92;
+}
+
 .hero-buttons {
     display: flex;
     gap: var(--spacing-md);
@@ -644,18 +655,17 @@
 
 /* Light mode hero content visibility */
 [data-theme="light"] .hero-title {
-    background: none;
-    -webkit-background-clip: initial;
-    -webkit-text-fill-color: initial;
-    background-clip: initial;
-    color: #1a1a1c !important;
-    text-shadow: 0 1px 3px rgba(255, 255, 255, 0.2);
-    font-weight: 800;
+    background: linear-gradient(135deg, #ffffff 0%, #b08a44 50%, #d2b074 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    text-shadow: none;
 }
 
 [data-theme="light"] .hero-subtitle {
-    color: #2a2a2e;
-    font-weight: 600;
+    color: var(--text-secondary);
+    font-weight: 500;
     text-shadow: none;
 }
 
@@ -797,7 +807,7 @@
 .vision-mission-card {
     background-color: var(--bg-accent);
     padding: var(--spacing-lg);
-    border-radius: 4px;
+    border-radius: 12px;
     border: 1px solid var(--glass-border);
     text-align: center;
 }
@@ -964,7 +974,7 @@
     cursor: pointer;
     background: var(--glass-bg);
     border: 1px solid var(--glass-border);
-    border-radius: 4px;
+    border-radius: 12px;
 }
 
 .practice-area-card-large:hover {
@@ -1607,11 +1617,6 @@
     transition: filter 0.5s ease;
 }
 
-/* Light mode: invert map colors */
-[data-theme="light"] .map-container iframe {
-    filter: invert(0.9) hue-rotate(180deg) brightness(1.1) contrast(0.9) !important;
-}
-
 .contact-link {
     display: inline-block;
     color: var(--color-gold);
@@ -1732,12 +1737,12 @@
 
 .map-container {
     height: 100%;
-    filter: grayscale(1) invert(0.9) contrast(1.2);
+    filter: none;
     transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .map-container:hover {
-    filter: grayscale(0) invert(0) contrast(1);
+    filter: none;
 }
 
 .map-container iframe {
@@ -1875,6 +1880,12 @@
         margin-bottom: var(--spacing-sm);
     }
 
+    .hero-quote-author {
+        margin-top: calc(var(--spacing-sm) * -0.5);
+        margin-bottom: var(--spacing-sm);
+        font-size: clamp(0.95rem, 2.4vw, 1.1rem);
+    }
+
     .hero-subtitle {
         font-size: clamp(1rem, 3vw, 1.15rem);
         margin-bottom: var(--spacing-md);
@@ -2007,6 +2018,14 @@
         overflow-wrap: break-word;
         word-wrap: break-word;
         hyphens: auto;
+    }
+
+    .hero-quote-author {
+        margin-top: calc(var(--spacing-xs) * -0.4);
+        margin-bottom: var(--spacing-sm);
+        font-size: 0.95rem;
+        letter-spacing: 0.02em;
+        padding: 0 var(--spacing-xs);
     }
 
     .hero-subtitle {
