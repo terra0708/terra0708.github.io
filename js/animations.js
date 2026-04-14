@@ -241,11 +241,6 @@ const getSubPageHeader = (container) => container.querySelector('.page-header, .
 
 // Initial Load
 document.addEventListener('DOMContentLoaded', () => {
-    // Initialize particles first, before animations
-    if (window.initParticles) {
-        window.initParticles();
-    }
-
     const headerTl = window.initializeAnimations();
     const preloader = document.querySelector('.preloader');
     const preloaderLogo = document.querySelector('.preloader-logo');
@@ -258,10 +253,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 onComplete: () => {
                     preloader.style.display = 'none';
                     headerTl.play();
-                    // Re-init particles after preloader is gone to ensure visibility
-                    if (window.initParticles) {
-                        setTimeout(() => window.initParticles(), 100);
-                    }
                 }
             });
     } else {
@@ -323,12 +314,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         scale: 0.99
                     });
 
-                    // Initialize particles immediately for new page
-                    if (window.initParticles) {
-                        window.initParticles(data.next.container);
-                    }
-
-                    // Start initialization immediately
+                    // Initialize theme-aware entrance
                     const newHeaderTl = window.initializeAnimations(data.next.container);
 
                     // Smooth fade in with theme-aware timing
@@ -364,11 +350,6 @@ document.addEventListener('DOMContentLoaded', () => {
                                 }
                             }
 
-                            // Re-init particles after transition to ensure it's visible
-                            if (window.initParticles) {
-                                setTimeout(() => window.initParticles(data.next.container), 100);
-                            }
-
                             // Refresh ScrollTrigger after page transition
                             setTimeout(() => ScrollTrigger.refresh(), 100);
                             setTimeout(() => ScrollTrigger.refresh(), 500);
@@ -391,13 +372,4 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
-// Fallback: Initialize particles on window load (in case CDN loads late)
-window.addEventListener('load', () => {
-    if (window.initParticles) {
-        // Check if particles are already initialized
-        const particlesContainer = document.querySelector('#particles-js');
-        if (particlesContainer && (!particlesContainer.pJSDom || particlesContainer.pJSDom.length === 0)) {
-            window.initParticles();
-        }
-    }
-});
+// End of animations.js
