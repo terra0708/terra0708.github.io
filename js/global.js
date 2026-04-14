@@ -208,18 +208,58 @@ const LanguageManager = {
         };
 
         const articlePairs = {
-            '/tr/makaleler/is-hukuku/is-hukukunda-yeni-duzenlemeler/': '/en/articles/labor-law/new-regulations-in-labor-law/',
-            '/tr/makaleler/aile-hukuku/aile-hukukunda-velayet-davalari/': '/en/articles/family-law/custody-cases-in-family-law/',
-            '/tr/makaleler/gayrimenkul-hukuku/gayrimenkul-alim-satim-surecleri/': '/en/articles/real-estate-law/real-estate-purchase-sale-processes/',
-            '/tr/makaleler/calisma-hukuku/calisma-hukukunda-sendika-haklari/': '/en/articles/employment-law/union-rights-in-employment-law/',
-            '/tr/makaleler/miras-hukuku/miras-hukuku-ve-vasiyetname/': '/en/articles/inheritance-law/inheritance-law-and-wills/',
-            '/tr/makaleler/aile-hukuku/bosanma-surecleri-ve-haklar/': '/en/articles/family-law/divorce-processes-and-rights/',
-            '/tr/makaleler/miras-hukuku/tereke-tespiti-davasi/': '/en/articles/inheritance-law/estate-detection-case/'
+            '/tr/hukuki-alanlar/is-hukuku/is-hukukunda-yeni-duzenlemeler/': '/en/legal-areas/labor-law/new-regulations-in-labor-law/',
+            '/tr/hukuki-alanlar/aile-hukuku/aile-hukukunda-velayet-davalari/': '/en/legal-areas/family-law/custody-cases-in-family-law/',
+            '/tr/hukuki-alanlar/gayrimenkul-hukuku/gayrimenkul-alim-satim-surecleri/': '/en/legal-areas/real-estate-law/real-estate-purchase-sale-processes/',
+            '/tr/hukuki-alanlar/calisma-hukuku/calisma-hukukunda-sendika-haklari/': '/en/legal-areas/employment-law/union-rights-in-employment-law/',
+            '/tr/hukuki-alanlar/miras-hukuku/miras-hukuku-ve-vasiyetname/': '/en/legal-areas/inheritance-law/inheritance-law-and-wills/',
+            '/tr/hukuki-alanlar/aile-hukuku/bosanma-surecleri-ve-haklar/': '/en/legal-areas/family-law/divorce-processes-and-rights/',
+            '/tr/hukuki-alanlar/miras-hukuku/tereke-tespiti-davasi/': '/en/legal-areas/inheritance-law/estate-detection-case/',
+            '/tr/hukuki-alanlar/miras-hukuku/vasiyetnamenin-acilmasi-davasi/': '/en/legal-areas/inheritance-law/opening-of-will-case/',
+            '/tr/hukuki-alanlar/miras-hukuku/mirasin-reddi/': '/en/legal-areas/inheritance-law/rejection-of-inheritance/',
+            '/tr/hukuki-alanlar/is-ve-sosyal-guvenlik-hukuku/ise-iade-davasi/': '/en/legal-areas/labor-and-social-security-law/reinstatement-lawsuit/',
+            '/tr/hukuki-alanlar/is-ve-sosyal-guvenlik-hukuku/is-kazasinin-tespiti-davasi/': '/en/legal-areas/labor-and-social-security-law/work-accident-determination-case/',
+            '/tr/hukuki-alanlar/kira-uyusmazliklari/kira-tespit-davasi/': '/en/legal-areas/rental-disputes/rent-determination-case/',
+            '/tr/hukuki-alanlar/tasinmaz-hukuku/ortakligin-giderilmesi-davasi/': '/en/legal-areas/immovable-property-law/partition-action-case/',
+            '/tr/hukuki-alanlar/tasinmaz-hukuku/muris-muvazaasi-nedeniyle-tapu-iptali-ve-tescil-davasi/': '/en/legal-areas/immovable-property-law/fictitious-transaction-title-deed-cancellation/',
+            '/tr/hukuki-alanlar/ceza-hukuku/tehdit-sucu/': '/en/legal-areas/criminal-law/threat-offense/',
+            '/tr/hukuki-alanlar/ceza-hukuku/uyusturucu-madde-kullanimi-veya-bulundurma-sucu/': '/en/legal-areas/criminal-law/drug-use-or-possession-offense/',
+            '/tr/hukuki-alanlar/ceza-hukuku/kasten-yaralama-sucu/': '/en/legal-areas/criminal-law/intentional-injury-offense/',
+            '/tr/hukuki-alanlar/ceza-hukuku/ceza-yargilamasinda-verilebilecek-karar-turleri/': '/en/legal-areas/criminal-law/types-of-judgments-in-criminal-trial/',
+            '/tr/hukuki-alanlar/ceza-hukuku/ceza-yargilamasinin-genel-isleyisi-ve-uzlastirma/': '/en/legal-areas/criminal-law/criminal-trial-overview-and-mediation/',
+            '/tr/hukuki-alanlar/ceza-hukuku/ceza-yargilamasinin-temel-kavramlari/': '/en/legal-areas/criminal-law/fundamental-concepts-of-criminal-proceedings/',
+            '/tr/hukuki-alanlar/aile-hukuku/cekismeli-bosanma-davasi/': '/en/legal-areas/family-law/contested-divorce-case/',
+            '/tr/hukuki-alanlar/aile-hukuku/anlasmali-bosanma-davasi/': '/en/legal-areas/family-law/uncontested-divorce-case/'
         };
 
         Object.keys(articlePairs).forEach((trPath) => {
             const enPath = articlePairs[trPath];
+            staticMap[trPath] = enPath;
             staticMap[enPath] = trPath;
+        });
+
+        const categorySiloPairs = {
+            '/en/legal-areas/labor-law/': '/tr/hukuki-alanlar/is-hukuku/',
+            '/tr/hukuki-alanlar/is-hukuku/': '/en/legal-areas/labor-law/',
+            '/en/legal-areas/family-law/': '/tr/hukuki-alanlar/aile-hukuku/',
+            '/tr/hukuki-alanlar/aile-hukuku/': '/en/legal-areas/family-law/',
+            '/en/legal-areas/real-estate-law/': '/tr/hukuki-alanlar/gayrimenkul-hukuku/',
+            '/tr/hukuki-alanlar/gayrimenkul-hukuku/': '/en/legal-areas/real-estate-law/',
+            '/en/legal-areas/employment-law/': '/tr/hukuki-alanlar/calisma-hukuku/',
+            '/tr/hukuki-alanlar/calisma-hukuku/': '/en/legal-areas/employment-law/',
+            '/en/legal-areas/inheritance-law/': '/tr/hukuki-alanlar/miras-hukuku/',
+            '/tr/hukuki-alanlar/miras-hukuku/': '/en/legal-areas/inheritance-law/',
+            '/en/legal-areas/labor-and-social-security-law/': '/tr/hukuki-alanlar/is-ve-sosyal-guvenlik-hukuku/',
+            '/tr/hukuki-alanlar/is-ve-sosyal-guvenlik-hukuku/': '/en/legal-areas/labor-and-social-security-law/',
+            '/en/legal-areas/rental-disputes/': '/tr/hukuki-alanlar/kira-uyusmazliklari/',
+            '/tr/hukuki-alanlar/kira-uyusmazliklari/': '/en/legal-areas/rental-disputes/',
+            '/en/legal-areas/immovable-property-law/': '/tr/hukuki-alanlar/tasinmaz-hukuku/',
+            '/tr/hukuki-alanlar/tasinmaz-hukuku/': '/en/legal-areas/immovable-property-law/',
+            '/en/legal-areas/criminal-law/': '/tr/hukuki-alanlar/ceza-hukuku/',
+            '/tr/hukuki-alanlar/ceza-hukuku/': '/en/legal-areas/criminal-law/'
+        };
+        Object.keys(categorySiloPairs).forEach((path) => {
+            staticMap[path] = categorySiloPairs[path];
         });
 
         const mapped = staticMap[currentPath] || (

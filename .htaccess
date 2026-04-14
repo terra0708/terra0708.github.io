@@ -29,32 +29,36 @@ RewriteRule ^en/faq\.html$ /en/faq/ [R=301,L]
 RewriteRule ^en/articles\.html$ /en/articles/ [R=301,L]
 RewriteRule ^en/contact\.html$ /en/contact/ [R=301,L]
 
+# 301: legacy article paths -> hukuki silos (SEO)
+RewriteRule ^tr/makaleler/(is-hukuku|aile-hukuku|gayrimenkul-hukuku|calisma-hukuku|miras-hukuku)/(.*)$ /tr/hukuki-alanlar/$1/$2 [R=301,L]
+RewriteRule ^en/articles/(labor-law|family-law|real-estate-law|employment-law|inheritance-law)/(.*)$ /en/legal-areas/$1/$2 [R=301,L]
+
 # Legacy article detail pages
 RewriteCond %{QUERY_STRING} (^|&)id=1(&|$)
-RewriteRule ^makale-detay\.html$ /tr/makaleler/is-hukuku/is-hukukunda-yeni-duzenlemeler/? [R=301,L]
+RewriteRule ^makale-detay\.html$ /tr/hukuki-alanlar/is-hukuku/is-hukukunda-yeni-duzenlemeler/? [R=301,L]
 RewriteCond %{QUERY_STRING} (^|&)id=2(&|$)
-RewriteRule ^makale-detay\.html$ /tr/makaleler/aile-hukuku/aile-hukukunda-velayet-davalari/? [R=301,L]
+RewriteRule ^makale-detay\.html$ /tr/hukuki-alanlar/aile-hukuku/aile-hukukunda-velayet-davalari/? [R=301,L]
 RewriteCond %{QUERY_STRING} (^|&)id=3(&|$)
-RewriteRule ^makale-detay\.html$ /tr/makaleler/gayrimenkul-hukuku/gayrimenkul-alim-satim-surecleri/? [R=301,L]
+RewriteRule ^makale-detay\.html$ /tr/hukuki-alanlar/gayrimenkul-hukuku/gayrimenkul-alim-satim-surecleri/? [R=301,L]
 RewriteCond %{QUERY_STRING} (^|&)id=4(&|$)
-RewriteRule ^makale-detay\.html$ /tr/makaleler/calisma-hukuku/calisma-hukukunda-sendika-haklari/? [R=301,L]
+RewriteRule ^makale-detay\.html$ /tr/hukuki-alanlar/calisma-hukuku/calisma-hukukunda-sendika-haklari/? [R=301,L]
 RewriteCond %{QUERY_STRING} (^|&)id=5(&|$)
-RewriteRule ^makale-detay\.html$ /tr/makaleler/miras-hukuku/miras-hukuku-ve-vasiyetname/? [R=301,L]
+RewriteRule ^makale-detay\.html$ /tr/hukuki-alanlar/miras-hukuku/miras-hukuku-ve-vasiyetname/? [R=301,L]
 RewriteCond %{QUERY_STRING} (^|&)id=6(&|$)
-RewriteRule ^makale-detay\.html$ /tr/makaleler/aile-hukuku/bosanma-surecleri-ve-haklar/? [R=301,L]
+RewriteRule ^makale-detay\.html$ /tr/hukuki-alanlar/aile-hukuku/bosanma-surecleri-ve-haklar/? [R=301,L]
 RewriteRule ^makale-detay\.html$ /tr/makaleler/ [R=301,L]
 
 RewriteCond %{QUERY_STRING} (^|&)id=1(&|$)
-RewriteRule ^en/article-detail\.html$ /en/articles/labor-law/new-regulations-in-labor-law/? [R=301,L]
+RewriteRule ^en/article-detail\.html$ /en/legal-areas/labor-law/new-regulations-in-labor-law/? [R=301,L]
 RewriteCond %{QUERY_STRING} (^|&)id=2(&|$)
-RewriteRule ^en/article-detail\.html$ /en/articles/family-law/custody-cases-in-family-law/? [R=301,L]
+RewriteRule ^en/article-detail\.html$ /en/legal-areas/family-law/custody-cases-in-family-law/? [R=301,L]
 RewriteCond %{QUERY_STRING} (^|&)id=3(&|$)
-RewriteRule ^en/article-detail\.html$ /en/articles/real-estate-law/real-estate-purchase-sale-processes/? [R=301,L]
+RewriteRule ^en/article-detail\.html$ /en/legal-areas/real-estate-law/real-estate-purchase-sale-processes/? [R=301,L]
 RewriteCond %{QUERY_STRING} (^|&)id=4(&|$)
-RewriteRule ^en/article-detail\.html$ /en/articles/employment-law/union-rights-in-employment-law/? [R=301,L]
+RewriteRule ^en/article-detail\.html$ /en/legal-areas/employment-law/union-rights-in-employment-law/? [R=301,L]
 RewriteCond %{QUERY_STRING} (^|&)id=5(&|$)
-RewriteRule ^en/article-detail\.html$ /en/articles/inheritance-law/inheritance-law-and-wills/? [R=301,L]
+RewriteRule ^en/article-detail\.html$ /en/legal-areas/inheritance-law/inheritance-law-and-wills/? [R=301,L]
 RewriteCond %{QUERY_STRING} (^|&)id=6(&|$)
-RewriteRule ^en/article-detail\.html$ /en/articles/family-law/divorce-processes-and-rights/? [R=301,L]
+RewriteRule ^en/article-detail\.html$ /en/legal-areas/family-law/divorce-processes-and-rights/? [R=301,L]
 RewriteRule ^en/article-detail\.html$ /en/articles/ [R=301,L]
 
