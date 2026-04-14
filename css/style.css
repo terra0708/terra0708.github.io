@@ -664,6 +664,47 @@
     text-shadow: none;
 }
 
+/* Match homepage headline treatment on all header titles in light mode */
+[data-theme="light"] .page-title,
+[data-theme="light"] .practice-area-detail-title,
+[data-theme="light"] .article-detail-title {
+    background: none;
+    -webkit-background-clip: initial;
+    -webkit-text-fill-color: initial;
+    background-clip: initial;
+    color: #3a2c1b;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.36);
+    font-weight: 800;
+}
+
+[data-theme="light"] .page-subtitle {
+    color: rgba(46, 34, 22, 0.9);
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.28);
+}
+
+/* Per-hero overlay tuning for readable light-mode headers */
+[data-theme="light"] .page-header.hero-about {
+    --hero-overlay: rgba(248, 245, 239, 0.34);
+}
+
+[data-theme="light"] .page-header.hero-practice-areas,
+[data-theme="light"] .practice-area-detail-header.hero-practice-areas {
+    --hero-overlay: rgba(248, 245, 239, 0.32);
+}
+
+[data-theme="light"] .page-header.hero-articles,
+[data-theme="light"] .article-detail-header-image.hero-articles {
+    --hero-overlay: rgba(248, 245, 239, 0.36);
+}
+
+[data-theme="light"] .page-header.hero-faq {
+    --hero-overlay: rgba(248, 245, 239, 0.42);
+}
+
+[data-theme="light"] .page-header.hero-contact {
+    --hero-overlay: rgba(248, 245, 239, 0.3);
+}
+
 [data-theme="light"] .hero-subtitle {
     color: var(--text-secondary);
     font-weight: 500;
@@ -757,15 +798,20 @@
     width: 220px;
     height: 280px;
     border-radius: 12px;
-    border: 1px dashed var(--color-gold);
-    color: var(--color-gold);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    font-weight: 600;
-    padding: var(--spacing-sm);
-    background: linear-gradient(180deg, rgba(160, 168, 192, 0.1), rgba(160, 168, 192, 0.02));
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(166, 137, 66, 0.2);
+}
+
+.about-profile-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.about-profile-photo:hover img {
+    transform: scale(1.05);
 }
 
 .about-profile-meta .divider {

@@ -100,7 +100,7 @@
     --glass-bg: rgba(255, 255, 255, 0.72);
     --glass-border: rgba(126, 93, 39, 0.18);
     --glass-shadow: 0 10px 30px 0 rgba(92, 67, 31, 0.1);
-    --hero-overlay: rgba(248, 245, 239, 0.16);
+    --hero-overlay: rgba(248, 245, 239, 0.22);
 }
 
 html {
