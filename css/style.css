@@ -1135,6 +1135,26 @@
     line-height: 1.7;
 }
 
+.faq-article-section-title {
+    margin: var(--spacing-lg) 0 var(--spacing-sm);
+    color: var(--color-gold);
+    font-size: clamp(1.2rem, 2.6vw, 1.6rem);
+    text-align: left;
+}
+
+.faq-article-link-wrap {
+    margin-top: var(--spacing-sm);
+}
+
+.faq-article-link {
+    color: var(--color-gold);
+    font-weight: 600;
+}
+
+.faq-article-link:hover {
+    color: var(--color-gold-light);
+}
+
 @media (max-width: 992px) {
     .faq-layout {
         flex-direction: column;
