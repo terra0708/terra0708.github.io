@@ -288,18 +288,6 @@ document.addEventListener('DOMContentLoaded', () => {
             transitions: [{
                 name: 'premium-transition',
                 leave(data) {
-                    // Remove old footer before transition to prevent duplicates
-                    const oldFooter = data.current.container.querySelector('.footer');
-                    if (oldFooter) {
-                        oldFooter.remove();
-                    }
-                    
-                    // Also check wrapper for any footer outside container
-                    const wrapperFooter = document.querySelector('body[data-barba="wrapper"] > .footer');
-                    if (wrapperFooter && !data.next.container.querySelector('.footer')) {
-                        wrapperFooter.remove();
-                    }
-                    
                     // Detect theme for smoother transitions
                     const isLightMode = document.documentElement.getAttribute('data-theme') === 'light';
                     const easeFunction = isLightMode ? 'power2.in' : 'power3.inOut';
@@ -322,15 +310,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 },
                 enter(data) {
                     window.scrollTo(0, 0);
-
-                    // Clean up any duplicate footers before entering
-                    const existingFooters = document.querySelectorAll('.footer');
-                    if (existingFooters.length > 1) {
-                        // Keep only the last one (the new one)
-                        for (let i = 0; i < existingFooters.length - 1; i++) {
-                            existingFooters[i].remove();
-                        }
-                    }
 
                     // Detect theme for smoother transitions
                     const isLightMode = document.documentElement.getAttribute('data-theme') === 'light';
@@ -389,16 +368,6 @@ document.addEventListener('DOMContentLoaded', () => {
                             if (window.initParticles) {
                                 setTimeout(() => window.initParticles(data.next.container), 100);
                             }
-
-                            // Final cleanup - ensure only one footer exists
-                            setTimeout(() => {
-                                const allFooters = document.querySelectorAll('.footer');
-                                if (allFooters.length > 1) {
-                                    for (let i = 0; i < allFooters.length - 1; i++) {
-                                        allFooters[i].remove();
-                                    }
-                                }
-                            }, 100);
 
                             // Refresh ScrollTrigger after page transition
                             setTimeout(() => ScrollTrigger.refresh(), 100);
