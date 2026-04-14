@@ -5,8 +5,8 @@ from pathlib import Path
 BASE = Path(__file__).resolve().parents[1]
 DOMAIN = "https://www.ozturkavukatlikburosu.av.tr"
 
-TR_SRC = BASE / "tr/hukuki-alanlar/miras-hukuku/miras-hukuku-ve-vasiyetname/index.html"
-EN_SRC = BASE / "en/legal-areas/inheritance-law/inheritance-law-and-wills/index.html"
+TR_SRC = BASE / "tr/hukuki-alanlar/miras-hukuku/tereke-tespiti-davasi/index.html"
+EN_SRC = BASE / "en/legal-areas/inheritance-law/estate-detection-case/index.html"
 
 # (tr_cat, tr_slug, tr_title, en_cat, en_slug, en_title, cat_tr, cat_en, tr_date, en_date)
 ROWS = [
@@ -26,37 +26,56 @@ ROWS = [
     ("aile-hukuku", "anlasmali-bosanma-davasi", "Anlaşmalı Boşanma Davası", "family-law", "uncontested-divorce-case", "Uncontested Divorce Case", "Aile Hukuku", "Family Law", "2026", "2026"),
 ]
 
+TR_H1_OLD = "Terekenin Tespiti Davası Nedir? Nasıl Açılır?"
+TR_TITLE_DOC_OLD = "Terekenin Tespiti Davası Nedir? Nasıl Açılır? | Öztürk Avukatlık"
+
+EN_H1_OLD = "What Is an Estate Determination Case and How Is It Opened?"
+EN_TITLE_DOC_OLD = "What Is an Estate Determination Case and How Is It Opened? | Ozturk Law Firm"
 
 BC_TR_OLD = (
-    '      <a href="/tr/">Ana Sayfa</a> &gt; <a href="/tr/hukuki-alanlar/">Hukuki Alanlar</a> &gt; '
-    '<a href="/tr/hukuki-alanlar/miras-hukuku/">Miras Hukuku</a> &gt; <span>Miras Hukuku ve Vasiyetname</span>'
+    '<a href="/tr/">Ana Sayfa</a> <span class="article-breadcrumb__sep" aria-hidden="true"></span> '
+    '<a href="/tr/hukuki-alanlar/">Hukuki Alanlar</a> <span class="article-breadcrumb__sep" aria-hidden="true"></span> '
+    '<a href="/tr/hukuki-alanlar/miras-hukuku/">Miras Hukuku</a> <span class="article-breadcrumb__sep" aria-hidden="true"></span> '
+    '<span class="article-breadcrumb__current">Terekenin Tespiti Davası</span>'
 )
+
 BC_EN_OLD = (
-    '      <a href="/en/">Home</a> &gt; <a href="/en/legal-areas/">Legal Areas</a> &gt; '
-    '<a href="/en/legal-areas/inheritance-law/">Inheritance Law</a> &gt; <span>Inheritance Law and Wills</span>'
+    '<a href="/en/">Home</a> <span class="article-breadcrumb__sep" aria-hidden="true"></span> '
+    '<a href="/en/legal-areas/">Legal Areas</a> <span class="article-breadcrumb__sep" aria-hidden="true"></span> '
+    '<a href="/en/legal-areas/inheritance-law/">Inheritance Law</a> <span class="article-breadcrumb__sep" aria-hidden="true"></span> '
+    '<span class="article-breadcrumb__current">Estate Determination Case</span>'
 )
 
 
 def build_tr(tr_cat, tr_slug, title, cat_label, tr_date, en_cat, en_slug):
     t = TR_SRC.read_text(encoding="utf-8")
     t = t.replace("\n    <script src=\"/js/article-detail.js\"></script>", "")
-    old = "miras-hukuku/miras-hukuku-ve-vasiyetname"
+    old = "miras-hukuku/tereke-tespiti-davasi"
     new = f"{tr_cat}/{tr_slug}"
     t = t.replace(old, new)
     t = t.replace(
-        f"{DOMAIN}/en/legal-areas/inheritance-law/inheritance-law-and-wills/",
+        f"{DOMAIN}/en/legal-areas/inheritance-law/estate-detection-case/",
         f"{DOMAIN}/en/legal-areas/{en_cat}/{en_slug}/",
     )
     bc_new = (
-        f'      <a href="/tr/">Ana Sayfa</a> &gt; <a href="/tr/hukuki-alanlar/">Hukuki Alanlar</a> &gt; '
-        f'<a href="/tr/hukuki-alanlar/{tr_cat}/">{cat_label}</a> &gt; <span>{title}</span>'
+        f'<a href="/tr/">Ana Sayfa</a> <span class="article-breadcrumb__sep" aria-hidden="true"></span> '
+        f'<a href="/tr/hukuki-alanlar/">Hukuki Alanlar</a> <span class="article-breadcrumb__sep" aria-hidden="true"></span> '
+        f'<a href="/tr/hukuki-alanlar/{tr_cat}/">{cat_label}</a> <span class="article-breadcrumb__sep" aria-hidden="true"></span> '
+        f'<span class="article-breadcrumb__current">{title}</span>'
     )
     t = t.replace(BC_TR_OLD, bc_new)
-    t = t.replace("Miras Hukuku ve Vasiyetname", title)
-    t = t.replace("Makale Başlığı", title)
-    t = t.replace("Hukuki Makale Detayı - Öztürk Avukatlık tarafından hazırlanan hukuki makale detay sayfası.", f"{title} — Öztürk Avukatlık hukuki bilgilendirme.")
+    t = t.replace(TR_H1_OLD, title)
+    t = t.replace(TR_TITLE_DOC_OLD, f"{title} | Öztürk Avukatlık")
     t = t.replace(
-        '<span class="article-detail-date" id="article-date">15 Ocak 2024</span>',
+        "Terekenin tespiti davası nedir, hangi durumlarda ve kimler tarafından açılır? Sulh hukuk mahkemesi, süre ve süreç hakkında genel bilgilendirme.",
+        f"{title} — Öztürk Avukatlık bilgilendirme.",
+    )
+    t = t.replace(
+        "Terekenin tespiti davası, TMK ve HMK çerçevesinde kimler tarafından hangi mahkemede açılır; süreç ve sık sorulan sorular.",
+        f"{title} — Öztürk Avukatlık.",
+    )
+    t = t.replace(
+        '<span class="article-detail-date" id="article-date">2026</span>',
         f'<span class="article-detail-date" id="article-date">{tr_date}</span>',
     )
     return t
@@ -65,23 +84,32 @@ def build_tr(tr_cat, tr_slug, title, cat_label, tr_date, en_cat, en_slug):
 def build_en(en_cat, en_slug, title, cat_label, en_date, tr_cat, tr_slug):
     t = EN_SRC.read_text(encoding="utf-8")
     t = t.replace("\n    <script src=\"/js/article-detail.js\"></script>", "")
-    old = "inheritance-law/inheritance-law-and-wills"
+    old = "inheritance-law/estate-detection-case"
     new = f"{en_cat}/{en_slug}"
     t = t.replace(old, new)
     t = t.replace(
-        f"{DOMAIN}/tr/hukuki-alanlar/miras-hukuku/miras-hukuku-ve-vasiyetname/",
+        f"{DOMAIN}/tr/hukuki-alanlar/miras-hukuku/tereke-tespiti-davasi/",
         f"{DOMAIN}/tr/hukuki-alanlar/{tr_cat}/{tr_slug}/",
     )
     bc_new = (
-        f'      <a href="/en/">Home</a> &gt; <a href="/en/legal-areas/">Legal Areas</a> &gt; '
-        f'<a href="/en/legal-areas/{en_cat}/">{cat_label}</a> &gt; <span>{title}</span>'
+        f'<a href="/en/">Home</a> <span class="article-breadcrumb__sep" aria-hidden="true"></span> '
+        f'<a href="/en/legal-areas/">Legal Areas</a> <span class="article-breadcrumb__sep" aria-hidden="true"></span> '
+        f'<a href="/en/legal-areas/{en_cat}/">{cat_label}</a> <span class="article-breadcrumb__sep" aria-hidden="true"></span> '
+        f'<span class="article-breadcrumb__current">{title}</span>'
     )
     t = t.replace(BC_EN_OLD, bc_new)
-    t = t.replace("Inheritance Law and Wills", title)
-    t = t.replace("Article Title", title)
-    t = t.replace("Article details and content.", f"{title} — Ozturk Law Firm.")
+    t = t.replace(EN_H1_OLD, title)
+    t = t.replace(EN_TITLE_DOC_OLD, f"{title} | Ozturk Law Firm")
     t = t.replace(
-        '<span class="article-detail-date" id="article-date">January 15, 2024</span>',
+        "What is an estate (tereke) determination case in Turkish law, when it is filed, who may file it, and how proceedings unfold before the peace civil court. General information.",
+        f"{title} — Ozturk Law Firm.",
+    )
+    t = t.replace(
+        "Estate determination under the Turkish Civil Code and Civil Procedure Code: court, duration, process, and FAQs.",
+        f"{title} — Ozturk Law Firm.",
+    )
+    t = t.replace(
+        '<span class="article-detail-date" id="article-date">2026</span>',
         f'<span class="article-detail-date" id="article-date">{en_date}</span>',
     )
     return t

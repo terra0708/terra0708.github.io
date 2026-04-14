@@ -6,30 +6,30 @@ window.initFAQ = () => {
     const articleFaqsByLang = {
         tr: [
             {
-                question: 'Kira sözleşmesi bitmeden tahliye davası açılabilir mi?',
-                answer: 'Kiracının temerrüdü, ihtiyaç veya tahliye taahhüdü gibi hukuki sebepler mevcutsa sözleşme süresi dolmadan da tahliye talep edilebilir. Her dosyada dayanak sebep ve deliller ayrı değerlendirilmelidir.',
-                articleTitle: 'Kira ve Tahliye Davaları',
-                articleUrl: 'makale-detay.html?id=3'
+                question: 'Kira bedeli konusunda anlaşmazlık çıkarsa ne yapılır?',
+                answer: 'Kiraya veren ile kiracı arasında kira bedeline ilişkin uyuşmazlık doğduğunda öncelikle arabuluculuk süreci işletilir; sonuç alınamazsa sulh hukuk mahkemesinde kira bedelinin tespiti davası açılabilir. Görevli mahkeme, süre ve delil yükü dosyaya göre değerlendirilir.',
+                articleTitle: 'Kira Bedelinin Tespiti Davası',
+                articleUrl: '/tr/hukuki-alanlar/kira-uyusmazliklari/kira-tespit-davasi/'
             },
             {
-                question: 'Dernek genel kurul kararının iptali için süre var mı?',
-                answer: 'Genel kurul kararlarına karşı iptal davası, kanunda öngörülen hak düşürücü süreler içinde açılmalıdır. Toplantı usulü, gündem ve üyelik statüsü gibi unsurlar davanın sonucunu doğrudan etkiler.',
-                articleTitle: 'Dernek ve Vakıflardan Doğan Davalar',
-                articleUrl: 'makale-detay.html?id=5'
+                question: 'Miras bırakanın malvarlığı tam olarak bilinmiyorsa ne yapılır?',
+                answer: 'Terekenin kapsamı net değilse veya mirasçılar arasında hangi mal ve hakların terekeye dahil olduğu konusunda tereddüt varsa, sulh hukuk mahkemesinde terekenin tespiti davası açılabilir. Bu dava, paylaşım öncesi malvarlığının belirlenmesine yöneliktir.',
+                articleTitle: 'Terekenin Tespiti Davası',
+                articleUrl: '/tr/hukuki-alanlar/miras-hukuku/tereke-tespiti-davasi/'
             }
         ],
         en: [
             {
-                question: 'Can an eviction case be filed before the lease term ends?',
-                answer: 'If legal grounds such as tenant default, genuine need, or a valid eviction undertaking exist, an eviction claim may be filed before the lease term ends. The legal basis and evidence must be assessed case by case.',
-                articleTitle: 'Lease and Eviction Cases',
-                articleUrl: 'article-detail.html?id=3'
+                question: 'What if the landlord and tenant cannot agree on the rent amount?',
+                answer: 'If mediation does not resolve the dispute, a rent determination case may be filed before the peace civil court. Which court has jurisdiction and what evidence is required depend on the specific lease and the facts of the case.',
+                articleTitle: 'Rent Determination Case',
+                articleUrl: '/en/legal-areas/rental-disputes/rent-determination-case/'
             },
             {
-                question: 'Is there a time limit for cancelling a foundation or association general assembly decision?',
-                answer: 'Yes. Actions for annulment are subject to statutory time limits. Procedural defects, agenda compliance, and membership status are key elements in evaluating such cases.',
-                articleTitle: 'Disputes Arising from Associations and Foundations',
-                articleUrl: 'article-detail.html?id=5'
+                question: 'What if the full extent of the deceased’s estate is unclear?',
+                answer: 'When the scope of the estate is unknown or heirs disagree on what forms part of it, an estate (tereke) determination case may be filed to establish the assets and liabilities before partition.',
+                articleTitle: 'Estate Determination Case',
+                articleUrl: '/en/legal-areas/inheritance-law/estate-detection-case/'
             }
         ]
     };

@@ -190,30 +190,16 @@ const LanguageManager = {
             '/tr/makaleler/': '/en/articles/',
             '/tr/iletisim/': '/en/contact/',
             '/index.html': '/en/',
-            '/hakkimizda.html': '/en/about/',
-            '/sss.html': '/en/faq/',
-            '/makaleler.html': '/en/articles/',
-            '/iletisim.html': '/en/contact/',
             '/en/': '/tr/',
             '/en/about/': '/tr/hakkimizda/',
             '/en/legal-areas/': '/tr/hukuki-alanlar/',
             '/en/faq/': '/tr/sss/',
             '/en/articles/': '/tr/makaleler/',
             '/en/contact/': '/tr/iletisim/',
-            '/en/index.html': '/tr/',
-            '/en/about.html': '/tr/hakkimizda/',
-            '/en/faq.html': '/tr/sss/',
-            '/en/articles.html': '/tr/makaleler/',
-            '/en/contact.html': '/tr/iletisim/'
+            '/en/index.html': '/tr/'
         };
 
         const articlePairs = {
-            '/tr/hukuki-alanlar/is-hukuku/is-hukukunda-yeni-duzenlemeler/': '/en/legal-areas/labor-law/new-regulations-in-labor-law/',
-            '/tr/hukuki-alanlar/aile-hukuku/aile-hukukunda-velayet-davalari/': '/en/legal-areas/family-law/custody-cases-in-family-law/',
-            '/tr/hukuki-alanlar/gayrimenkul-hukuku/gayrimenkul-alim-satim-surecleri/': '/en/legal-areas/real-estate-law/real-estate-purchase-sale-processes/',
-            '/tr/hukuki-alanlar/calisma-hukuku/calisma-hukukunda-sendika-haklari/': '/en/legal-areas/employment-law/union-rights-in-employment-law/',
-            '/tr/hukuki-alanlar/miras-hukuku/miras-hukuku-ve-vasiyetname/': '/en/legal-areas/inheritance-law/inheritance-law-and-wills/',
-            '/tr/hukuki-alanlar/aile-hukuku/bosanma-surecleri-ve-haklar/': '/en/legal-areas/family-law/divorce-processes-and-rights/',
             '/tr/hukuki-alanlar/miras-hukuku/tereke-tespiti-davasi/': '/en/legal-areas/inheritance-law/estate-detection-case/',
             '/tr/hukuki-alanlar/miras-hukuku/vasiyetnamenin-acilmasi-davasi/': '/en/legal-areas/inheritance-law/opening-of-will-case/',
             '/tr/hukuki-alanlar/miras-hukuku/mirasin-reddi/': '/en/legal-areas/inheritance-law/rejection-of-inheritance/',
@@ -239,14 +225,9 @@ const LanguageManager = {
         });
 
         const categorySiloPairs = {
-            '/en/legal-areas/labor-law/': '/tr/hukuki-alanlar/is-hukuku/',
-            '/tr/hukuki-alanlar/is-hukuku/': '/en/legal-areas/labor-law/',
             '/en/legal-areas/family-law/': '/tr/hukuki-alanlar/aile-hukuku/',
             '/tr/hukuki-alanlar/aile-hukuku/': '/en/legal-areas/family-law/',
-            '/en/legal-areas/real-estate-law/': '/tr/hukuki-alanlar/gayrimenkul-hukuku/',
-            '/tr/hukuki-alanlar/gayrimenkul-hukuku/': '/en/legal-areas/real-estate-law/',
-            '/en/legal-areas/employment-law/': '/tr/hukuki-alanlar/calisma-hukuku/',
-            '/tr/hukuki-alanlar/calisma-hukuku/': '/en/legal-areas/employment-law/',
+            '/en/legal-areas/real-estate-law/': '/tr/hukuki-alanlar/tasinmaz-hukuku/',
             '/en/legal-areas/inheritance-law/': '/tr/hukuki-alanlar/miras-hukuku/',
             '/tr/hukuki-alanlar/miras-hukuku/': '/en/legal-areas/inheritance-law/',
             '/en/legal-areas/labor-and-social-security-law/': '/tr/hukuki-alanlar/is-ve-sosyal-guvenlik-hukuku/',
