@@ -4,54 +4,6 @@ window.initArticleDetail = () => {
     const isEnglish = path.startsWith('/en/');
 
     const articleMap = {
-        '1': {
-            trSlug: '/tr/hukuki-alanlar/is-hukuku/is-hukukunda-yeni-duzenlemeler/',
-            enSlug: '/en/legal-areas/labor-law/new-regulations-in-labor-law/',
-            trTitle: 'İş Hukukunda Yeni Düzenlemeler',
-            enTitle: 'New Regulations in Labor Law',
-            trDate: '15 Ocak 2024',
-            enDate: 'January 15, 2024'
-        },
-        '2': {
-            trSlug: '/tr/hukuki-alanlar/aile-hukuku/aile-hukukunda-velayet-davalari/',
-            enSlug: '/en/legal-areas/family-law/custody-cases-in-family-law/',
-            trTitle: 'Aile Hukukunda Velayet Davaları',
-            enTitle: 'Custody Cases in Family Law',
-            trDate: '10 Ocak 2024',
-            enDate: 'January 10, 2024'
-        },
-        '3': {
-            trSlug: '/tr/hukuki-alanlar/gayrimenkul-hukuku/gayrimenkul-alim-satim-surecleri/',
-            enSlug: '/en/legal-areas/real-estate-law/real-estate-purchase-sale-processes/',
-            trTitle: 'Gayrimenkul Alım-Satım Süreçleri',
-            enTitle: 'Real Estate Purchase-Sale Processes',
-            trDate: '5 Ocak 2024',
-            enDate: 'January 5, 2024'
-        },
-        '4': {
-            trSlug: '/tr/hukuki-alanlar/calisma-hukuku/calisma-hukukunda-sendika-haklari/',
-            enSlug: '/en/legal-areas/employment-law/union-rights-in-employment-law/',
-            trTitle: 'Çalışma Hukukunda Sendika Hakları',
-            enTitle: 'Union Rights in Employment Law',
-            trDate: '28 Aralık 2023',
-            enDate: 'December 28, 2023'
-        },
-        '5': {
-            trSlug: '/tr/hukuki-alanlar/miras-hukuku/miras-hukuku-ve-vasiyetname/',
-            enSlug: '/en/legal-areas/inheritance-law/inheritance-law-and-wills/',
-            trTitle: 'Miras Hukuku ve Vasiyetname',
-            enTitle: 'Inheritance Law and Wills',
-            trDate: '20 Aralık 2023',
-            enDate: 'December 20, 2023'
-        },
-        '6': {
-            trSlug: '/tr/hukuki-alanlar/aile-hukuku/bosanma-surecleri-ve-haklar/',
-            enSlug: '/en/legal-areas/family-law/divorce-processes-and-rights/',
-            trTitle: 'Boşanma Süreçleri ve Haklar',
-            enTitle: 'Divorce Processes and Rights',
-            trDate: '15 Aralık 2023',
-            enDate: 'December 15, 2023'
-        },
         '7': {
             trSlug: '/tr/hukuki-alanlar/miras-hukuku/tereke-tespiti-davasi/',
             enSlug: '/en/legal-areas/inheritance-law/estate-detection-case/',
@@ -232,7 +184,7 @@ window.initArticleDetail = () => {
     }
 
     if (!articleId || !articleMap[articleId]) {
-        articleId = '1';
+        articleId = '7';
     }
 
     const selected = articleMap[articleId];
@@ -242,7 +194,13 @@ window.initArticleDetail = () => {
     const titleEl = document.getElementById('article-title');
     const dateEl = document.getElementById('article-date');
     if (titleEl) titleEl.textContent = title;
-    if (dateEl) dateEl.textContent = date;
+    if (dateEl) {
+        dateEl.textContent = date;
+        // Show date only if coming from blog/articles page
+        if (urlParams.get('source') === 'blog') {
+            dateEl.style.display = 'inline-block';
+        }
+    }
 
     document.title = `${title} - ${isEnglish ? 'Ozturk Law Firm' : 'Öztürk Avukatlık'}`;
 
