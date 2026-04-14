@@ -9,18 +9,23 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: var(--header-gradient);
+    background-color: var(--bg-primary);
+    background-image: var(--header-gradient);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     padding-top: var(--header-height);
     overflow: hidden;
     overflow-x: hidden;
     width: 100%;
     max-width: 100vw;
-    cursor: pointer;
     transition: opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1),
                 transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
     box-sizing: border-box;
     z-index: 0;
 }
+
+/* Home Hero Specific background set via .hero-home class */
 
 /* Smooth section transitions */
 .section {
@@ -577,21 +582,56 @@
 /* ========== PAGE HEADER ========== */
 .page-header {
     position: relative;
-    min-height: 400px;
+    min-height: 450px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: var(--header-gradient);
+    background-color: var(--bg-primary);
+    background-image: var(--header-gradient);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     padding-top: var(--header-height);
     overflow: hidden;
     overflow-x: hidden;
     width: 100%;
     max-width: 100vw;
-    cursor: pointer;
     transition: opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1),
                 transform 0.6s cubic-bezier(0.4, 0, 0.2, 1),
                 background 0.6s cubic-bezier(0.4, 0, 0.2, 1);
     box-sizing: border-box;
+}
+
+.hero.hero-home,
+.page-header.hero-home {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../public/img/hero/hero-home.png') !important;
+}
+
+.hero.hero-about,
+.page-header.hero-about {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('../public/img/hero/hero-about.png') !important;
+}
+
+.hero.hero-practice-areas,
+.page-header.hero-practice-areas,
+.practice-area-detail-header.hero-practice-areas {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('../public/img/hero/hero-practice-areas.png') !important;
+}
+
+.hero.hero-articles,
+.page-header.hero-articles,
+.article-detail-header-image.hero-articles {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('../public/img/hero/hero-articles.png') !important;
+}
+
+.hero.hero-faq,
+.page-header.hero-faq {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('../public/img/hero/hero-faq.png') !important;
+}
+
+.hero.hero-contact,
+.page-header.hero-contact {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('../public/img/hero/hero-contact.png') !important;
 }
 
 /* Light mode page header transitions */
@@ -1234,15 +1274,22 @@
 }
 
 /* ========== ARTICLE DETAIL PAGE ========== */
-.article-detail-header {
+.practice-area-detail-header {
     position: relative;
     width: 100%;
     max-width: 100vw;
-    height: 500px;
+    height: 450px;
     margin-top: var(--header-height);
+    display: flex;
+    align-items: center;
+    justify-content: center;
     overflow: hidden;
     overflow-x: hidden;
     box-sizing: border-box;
+    background-image: var(--header-gradient);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 .article-detail-header-image {
@@ -1251,7 +1298,10 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: var(--header-gradient);
+    background-image: var(--header-gradient);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 .article-detail-header-image::after {

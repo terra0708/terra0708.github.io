@@ -245,7 +245,7 @@ a:hover {
     width: 100%;
     max-width: 100vw;
     height: var(--header-height);
-    background-color: transparent;
+    background-color: var(--bg-secondary);
     backdrop-filter: none;
     -webkit-backdrop-filter: none;
     z-index: 10000;
@@ -273,7 +273,7 @@ a:hover {
 .navbar.scrolled {
     height: 90px;
     background-color: var(--bg-secondary);
-    opacity: 0.95;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.15);
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
