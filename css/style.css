@@ -656,20 +656,57 @@
 }
 
 .about-content {
-    max-width: 900px;
+    max-width: 1100px;
     margin: 0 auto;
+}
+
+.about-text {
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: 14px;
+    padding: clamp(1.25rem, 2.8vw, 2.25rem);
+    box-shadow: var(--glass-shadow);
+}
+
+.about-profile-header {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    gap: var(--spacing-lg);
+    align-items: center;
+    margin-bottom: var(--spacing-md);
+}
+
+.about-profile-photo {
+    width: 220px;
+    height: 280px;
+    border-radius: 12px;
+    border: 1px dashed var(--color-gold);
+    color: var(--color-gold);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: 600;
+    padding: var(--spacing-sm);
+    background: linear-gradient(180deg, rgba(212, 175, 55, 0.12), rgba(212, 175, 55, 0.03));
+}
+
+.about-profile-meta .divider {
+    margin-left: 0;
 }
 
 .about-text h2 {
     color: var(--color-gold);
     margin-bottom: var(--spacing-md);
+    line-height: 1.3;
 }
 
 .about-text p {
-    font-size: 1.1rem;
+    font-size: clamp(1rem, 1.8vw, 1.1rem);
     line-height: 1.9;
     color: var(--text-secondary);
     margin-bottom: var(--spacing-md);
+    text-align: justify;
 }
 
 /* ========== VISION & MISSION ========== */
@@ -753,9 +790,35 @@
     text-align: left;
 }
 
+.vision-mission-card .law-reference-inline {
+    color: var(--color-gold);
+    font-weight: 700;
+}
+
+.vision-mission-card .law-reference-block {
+    display: inline-block;
+    margin-top: 0.5rem;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    color: var(--text-muted);
+    font-style: italic;
+    font-size: 0.9em;
+    background: transparent;
+}
+
 /* ========== VALUES SECTION ========== */
 .section-values {
     background: var(--bg-primary);
+}
+
+.values-intro {
+    max-width: 900px;
+    margin: 0 auto var(--spacing-md);
+    text-align: center;
+    color: var(--text-secondary);
+    font-size: clamp(1rem, 1.8vw, 1.1rem);
+    line-height: 1.8;
 }
 
 .value-item {
@@ -765,6 +828,10 @@
     border: 1px solid var(--glass-border);
     border-radius: 8px;
     transition: var(--transition-normal);
+    min-height: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .value-item:hover {
@@ -774,12 +841,29 @@
 }
 
 .value-item h3 {
-    margin-bottom: var(--spacing-sm);
+    margin-bottom: 0;
     color: var(--color-gold);
 }
 
 .value-item p {
     color: var(--text-secondary);
+}
+
+@media (max-width: 900px) {
+    .about-profile-header {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        text-align: center;
+    }
+
+    .about-profile-photo {
+        width: min(280px, 100%);
+        height: 240px;
+    }
+
+    .about-profile-meta .divider {
+        margin-left: auto;
+    }
 }
 
 /* ========== PRACTICE AREAS PAGE ========== */
