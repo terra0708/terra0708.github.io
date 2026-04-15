@@ -12,30 +12,6 @@ window.initArticleDetail = () => {
             trDate: '30 Mart 2026',
             enDate: 'March 30, 2026'
         },
-        '8': {
-            trSlug: '/tr/hukuki-alanlar/miras-hukuku/vasiyetnamenin-acilmasi-davasi/',
-            enSlug: '/en/legal-areas/inheritance-law/opening-of-will-case/',
-            trTitle: 'Vasiyetnamenin Açılması Davası Nedir? Nasıl Açılır?',
-            enTitle: 'What Is the Proceeding to Open a Will and How Does It Work?',
-            trDate: '31 Mart 2026',
-            enDate: 'March 31, 2026'
-        },
-        '9': {
-            trSlug: '/tr/hukuki-alanlar/miras-hukuku/vasiyetnamenin-tenfizi-davasi/',
-            enSlug: '/en/legal-areas/inheritance-law/enforcement-of-will-case/',
-            trTitle: 'Vasiyetnamenin Tenfizi (Vasiyetnamenin Yerine Getirilmesi) Davası Nedir? Nasıl Açılır?',
-            enTitle: 'What Is an Action for Enforcement of a Will and How Is It Filed?',
-            trDate: '2 Nisan 2026',
-            enDate: 'April 2, 2026'
-        },
-        '10': {
-            trSlug: '/tr/hukuki-alanlar/miras-hukuku/vasiyetnamenin-iptali-davasi/',
-            enSlug: '/en/legal-areas/inheritance-law/annulment-of-will-case/',
-            trTitle: 'Vasiyetnamenin İptali Davası Nedir? Nasıl Açılır?',
-            enTitle: 'What Is an Action for Annulment of a Will and How Is It Filed?',
-            trDate: '1 Nisan 2026',
-            enDate: 'April 1, 2026'
-        },
         '11': {
             trSlug: '/tr/hukuki-alanlar/miras-hukuku/mirasin-reddi/',
             enSlug: '/en/legal-areas/inheritance-law/rejection-of-inheritance/',
@@ -43,14 +19,6 @@ window.initArticleDetail = () => {
             enTitle: 'What is Disclaimer of Inheritance and How is it Done?',
             trDate: '29 Mart 2026',
             enDate: 'March 29, 2026'
-        },
-        '12': {
-            trSlug: '/tr/hukuki-alanlar/is-ve-sosyal-guvenlik-hukuku/ise-iade-davasi/',
-            enSlug: '/en/legal-areas/labor-and-social-security-law/reinstatement-lawsuit/',
-            trTitle: 'İşe İade Davası Nedir? Nasıl Açılır?',
-            enTitle: 'What is a Reinstatement Lawsuit and How to File?',
-            trDate: '25 Mart 2026',
-            enDate: 'March 25, 2026'
         },
         '13': {
             trSlug: '/tr/hukuki-alanlar/is-ve-sosyal-guvenlik-hukuku/is-kazasinin-tespiti-davasi/',

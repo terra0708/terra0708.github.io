@@ -201,9 +201,7 @@ const LanguageManager = {
 
         const articlePairs = {
             '/tr/hukuki-alanlar/miras-hukuku/tereke-tespiti-davasi/': '/en/legal-areas/inheritance-law/estate-detection-case/',
-            '/tr/hukuki-alanlar/miras-hukuku/vasiyetnamenin-acilmasi-davasi/': '/en/legal-areas/inheritance-law/opening-of-will-case/',
             '/tr/hukuki-alanlar/miras-hukuku/mirasin-reddi/': '/en/legal-areas/inheritance-law/rejection-of-inheritance/',
-            '/tr/hukuki-alanlar/is-ve-sosyal-guvenlik-hukuku/ise-iade-davasi/': '/en/legal-areas/labor-and-social-security-law/reinstatement-lawsuit/',
             '/tr/hukuki-alanlar/is-ve-sosyal-guvenlik-hukuku/is-kazasinin-tespiti-davasi/': '/en/legal-areas/labor-and-social-security-law/work-accident-determination-case/',
             '/tr/hukuki-alanlar/kira-uyusmazliklari/kira-tespit-davasi/': '/en/legal-areas/rental-disputes/rent-determination-case/',
             '/tr/hukuki-alanlar/tasinmaz-hukuku/ortakligin-giderilmesi-davasi/': '/en/legal-areas/immovable-property-law/partition-action-case/',
