@@ -597,6 +597,13 @@
     color: var(--color-gold);
 }
 
+.footer-social-title {
+    color: var(--text-primary);
+    font-size: 0.92rem;
+    font-weight: 600;
+    margin: var(--spacing-sm) 0 var(--spacing-xs);
+}
+
 .footer-social {
     display: flex;
     align-items: center;
@@ -626,6 +633,20 @@
 .footer-social-icon {
     width: 14px;
     height: 14px;
+}
+
+.footer-social--large .footer-social-link {
+    width: 36px;
+    height: 36px;
+}
+
+.footer-social--large .footer-social-icon {
+    width: 18px;
+    height: 18px;
+}
+
+.footer-contact-section p {
+    line-height: 1.55;
 }
 
 .footer-bottom {
@@ -2906,6 +2927,29 @@ button.article-faq-item__summary:focus-visible {
 
     .footer-social {
         justify-content: center;
+    }
+
+    .footer-contact-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-contact-section > * {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .footer-contact-section > * + * {
+        margin-top: 0.85rem;
+    }
+
+    .footer-contact-section p {
+        line-height: 1.75;
+    }
+
+    .footer-contact-section .footer-social-title {
+        font-size: 1rem;
     }
 
     .vision-mission-grid {
