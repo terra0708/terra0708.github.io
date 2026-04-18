@@ -57,12 +57,12 @@ const ThemeManager = {
 // ========== LANGUAGE MANAGEMENT ==========
 const LanguageManager = {
     // Define handler function once (outside of addLanguageSwitcher)
-    handleLanguageClick: function(e) {
+    handleLanguageClick: function (e) {
         // Use closest for reliable element detection
         let toggle = e.target.closest('.language-toggle');
         let switcher = e.target.closest('.language-switcher');
         let option = e.target.closest('.language-option');
-        
+
         // If closest didn't work (e.g., SVG elements), traverse up manually
         if (!switcher && !toggle && !option) {
             let target = e.target;
@@ -90,7 +90,7 @@ const LanguageManager = {
             e.stopImmediatePropagation();
             const targetLang = option.getAttribute('data-lang');
             const currentLang = LanguageManager.detectLanguage();
-            
+
             // Close all dropdowns
             document.querySelectorAll('.language-switcher').forEach(sw => {
                 sw.classList.remove('active');
@@ -121,16 +121,16 @@ const LanguageManager = {
                 }
             }
         }
-        
+
         if (toggle || switcher || currentSwitcher) {
             e.preventDefault();
             e.stopPropagation();
             e.stopImmediatePropagation();
-            
+
             if (!currentSwitcher) return;
-            
+
             const isActive = currentSwitcher.classList.contains('active');
-            
+
             // Close all dropdowns first
             document.querySelectorAll('.language-switcher').forEach(sw => {
                 sw.classList.remove('active');
@@ -276,7 +276,7 @@ const LanguageManager = {
         // Add document-level listener with capture phase (works for all pages, even after Barba.js transitions)
         // Capture phase ensures we get the event before other listeners
         document.addEventListener('click', this.boundHandler, true);
-        
+
         // Also add in bubble phase as backup
         document.addEventListener('click', this.boundHandler, false);
     },
@@ -286,7 +286,7 @@ const LanguageManager = {
         document.querySelectorAll('.current-lang').forEach(el => {
             el.textContent = currentLang.toUpperCase();
         });
-        
+
         // Update active state in dropdown
         document.querySelectorAll('.language-option').forEach(option => {
             const lang = option.getAttribute('data-lang');
@@ -382,7 +382,7 @@ window.initGlobalUI = function () {
 
 // Initialize language switcher as early as possible
 // This ensures it works on all pages, including direct navigation
-(function() {
+(function () {
     // Wait for LanguageManager to be defined
     const initLanguageSwitcher = () => {
         if (typeof LanguageManager !== 'undefined' && LanguageManager.addLanguageSwitcher) {
@@ -392,7 +392,7 @@ window.initGlobalUI = function () {
             setTimeout(initLanguageSwitcher, 10);
         }
     };
-    
+
     // Try immediately
     if (document.readyState === 'loading') {
         document.addEventListener('DOMContentLoaded', initLanguageSwitcher);
