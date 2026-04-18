@@ -174,7 +174,11 @@ const LanguageManager = {
     },
 
     getAlternateURL: function (targetLang) {
-        const currentPath = window.location.pathname.replace(/\/+$/, '/') || '/';
+        let currentPath = window.location.pathname;
+        if (currentPath.endsWith('/index.html')) {
+            currentPath = currentPath.substring(0, currentPath.length - 10);
+        }
+        currentPath = currentPath.replace(/\/+$/, '/') || '/';
         const currentLang = this.detectLanguage();
 
         if (currentLang === targetLang) {
