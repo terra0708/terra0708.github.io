@@ -692,34 +692,34 @@
 
 .hero.hero-home,
 .page-header.hero-home {
-    background-image: linear-gradient(var(--hero-overlay), var(--hero-overlay)), url('../public/img/hero/hero-home.png') !important;
+    background-image: linear-gradient(var(--hero-overlay), var(--hero-overlay)), url('../public/img/hero/hero-home.webp') !important;
 }
 
 .hero.hero-about,
 .page-header.hero-about {
-    background-image: linear-gradient(var(--hero-overlay), var(--hero-overlay)), url('../public/img/hero/hero-about.png') !important;
+    background-image: linear-gradient(var(--hero-overlay), var(--hero-overlay)), url('../public/img/hero/hero-about.webp') !important;
 }
 
 .hero.hero-legal-areas,
 .page-header.hero-legal-areas,
 .legal-area-detail-header.hero-legal-areas {
-    background-image: linear-gradient(var(--hero-overlay), var(--hero-overlay)), url('../public/img/hero/hero-legal-areas.png') !important;
+    background-image: linear-gradient(var(--hero-overlay), var(--hero-overlay)), url('../public/img/hero/hero-legal-areas.webp') !important;
 }
 
 .hero.hero-articles,
 .page-header.hero-articles,
 .article-detail-header-image.hero-articles {
-    background-image: linear-gradient(var(--hero-overlay), var(--hero-overlay)), url('../public/img/hero/hero-articles.png') !important;
+    background-image: linear-gradient(var(--hero-overlay), var(--hero-overlay)), url('../public/img/hero/hero-articles.webp') !important;
 }
 
 .hero.hero-faq,
 .page-header.hero-faq {
-    background-image: linear-gradient(var(--hero-overlay), var(--hero-overlay)), url('../public/img/hero/hero-faq.png') !important;
+    background-image: linear-gradient(var(--hero-overlay), var(--hero-overlay)), url('../public/img/hero/hero-faq.webp') !important;
 }
 
 .hero.hero-contact,
 .page-header.hero-contact {
-    background-image: linear-gradient(var(--hero-overlay), var(--hero-overlay)), url('../public/img/hero/hero-contact.png') !important;
+    background-image: linear-gradient(var(--hero-overlay), var(--hero-overlay)), url('../public/img/hero/hero-contact.webp') !important;
 }
 
 /* Brighten images in light mode */
